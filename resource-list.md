@@ -30,6 +30,7 @@ existing WDL docs on Terra documentation, Github, GATK site and Dockstore site (
 5. on Dockstore, WDL best practices - https://docs.dockstore.org/en/develop/advanced-topics/best-practices/wdl-best-practices.html
 5. on GATK, getting started with WDL - https://gatk.broadinstitute.org/hc/en-us/articles/360035889771-Pipelining-GATK-with-WDL-and-Cromwell
 6. on GitHub - WDL spec - https://github.com/openwdl/wdl/blob/develop/SPEC.md#true-and-false
+7. AWS Open Genomics - included CF template for cromwell and WDL examples - https://docs.opendata.aws/genomics-workflows/quick-start/
 
 
 
