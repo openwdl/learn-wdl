@@ -15,6 +15,7 @@ Goal: Leveled-approach to learning WDL script features for scalable genomic pipe
 - Common real world jobs (still subsampled) - max run time 15 min on cloud, should be free (within free tier)
 - Scaled-up real-world jobs - could take 60 min or longer and cost ~ $5 (is this possible?)
 - Finding reference WDL pipelines for various execution environments (HPC, GCP, AWS, Terra.bio...)
+  - Open source collection of WDL tool scripts for bioinformatics at `biowdl` - [link](https://github.com/biowdl/tasks)
 
 ## Best Practices for WDL
 
