@@ -21,3 +21,10 @@ How to run the examples
 - find inputs file and navigate to `hello-server_inputs.json`.
 - navigate to the bottom of this section and click "Try it out!"
 - observe output from the server process.
+
+### hello-aws-server.wdl USES server mode on AWS
+- set up an AWS EC2 instance will cromwell and configure the cromwell server [link](https://docs.opendata.aws/genomics-workflows/orchestration/cromwell/cromwell-examples/) 
+- run this command 
+    - `curl -X POST "http://localhost:8000/api/workflows/v1" \`  
+    - `-H  "accept: application/json" \`
+    - `-F "workflowSource=@/path/to/hello-aws-server.wdl"`
