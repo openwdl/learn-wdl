@@ -16,6 +16,7 @@ Goal: Leveled-approach to learning WDL script features for scalable genomic pipe
 - Scaled-up real-world jobs - could take 60 min or longer and cost ~ $5 (is this possible?)
 - Finding reference WDL pipelines for various execution environments (HPC, GCP, AWS, Terra.bio...)
   - Open source collection of WDL tool scripts for bioinformatics at `biowdl` - [link](https://github.com/biowdl/tasks)
+  - Using IMPORTS statements in WDL scripts - https://cromwell.readthedocs.io/en/stable/Imports/
 
 ## Best Practices for WDL
 
