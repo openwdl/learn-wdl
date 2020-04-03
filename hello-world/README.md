@@ -6,13 +6,13 @@ How to run the examples
 3. Follow the insructions to run the example
 
 ---
-### hello-world.wdl
+### hello-world.wdl USES run mode
 - run `java -jar cromwell-XY.jar run hello-world.wdl`
 
-### hello-input.wdl
+### hello-input.wdl USES run mode
 - run `java -jar cromwell-XY.jar run hello-world.wdl --inputs hello-input.json`
 
-### hello-server-inputs.wdl
+### hello-server-inputs.wdl USES server mode
 - run `java -jar cromwell-[version].jar server` 
 - go to `localhost:8000`
 - navigate to Workflows section and click "Show/Hide"
