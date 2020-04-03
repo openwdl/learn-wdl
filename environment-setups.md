@@ -10,9 +10,11 @@ Here is a list of execution environments for WDL scripts.
     - docker tools (if using docker container images)
     - `example.wdl` (can use `params.wdl.json`)
     - cromwell has two modes - 'run' for single workflows --or-- 'server' for scaling multiple workflows
-  - miniWDL execution
+  - miniWDL execution --or--
     - get miniWDL tool
     - IMPORTANT: this section is in progress
+  - dockstore execution
+    - you can test locally with Dockstore - https://docs.dockstore.org/en/develop/getting-started/getting-started-with-wdl.html
 - **HPC**
     - Link to using cromwell on SLURM - https://cromwell.readthedocs.io/en/stable/backends/SLURM/
 ---
