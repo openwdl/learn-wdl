@@ -13,7 +13,7 @@ Here is a list of execution environments for WDL scripts.
     - get miniWDL tool
     - IMPORTANT: this section is in progress
 - **HPC**
-    - IMPORTANT: this section is in progress
+    - Link to using cromwell on SLURM - https://cromwell.readthedocs.io/en/stable/backends/SLURM/
 ---
 
 ### Public Cloud
@@ -38,3 +38,8 @@ Here is a list of execution environments for WDL scripts.
   - Requires an account on Terra.bio (can use free $ 300 in GCP credits to try this out)
  - **DNANexus**
     - IMPORTANT: this section is in progress
+    
+---
+
+ ### Libraries
+  - **Apache Spark** - link to example - https://cromwell.readthedocs.io/en/stable/backends/Spark/
