@@ -10,7 +10,7 @@ How to run the examples
 - run `java -jar cromwell-XY.jar run hello-world.wdl`
 
 ### hello-input.wdl
-- run `java -jar cromwell-XY.jar run hello-world.wdl --name world`
+- run `java -jar cromwell-XY.jar run hello-world.wdl --inputs hello-input.json`
 
 ### hello-server-inputs.wdl
 - run `java -jar cromwell-[version].jar server` 
