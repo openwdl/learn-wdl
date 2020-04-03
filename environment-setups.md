@@ -4,6 +4,14 @@ Here is a list of execution environments for WDL scripts.
 
 Local
 - laptop
+  - cromwell execution --or--
+    - cromwell-XY.jar
+    - jdk
+    - docker tools (if using docker container images)
+    - example.wdl (can use params.json)
+  - miniWDL execution
+    - get miniWDL tool
+    - IMPORTANT: this section is in progress
 - HPC
 
 Public Cloud
@@ -24,3 +32,5 @@ Bioinformatics Platforms
 - Terra.bio - runs on GCP
   - Here is a [link](https://app.terra.bio/#workspaces/fc-product-demo/Terra-Workflows-Quickstart) to a Terra.bio workspace which includes 3 versions of a WDL workflow
   - Requires an account on Terra.bio (can use free $ 300 in GCP credits to try this out)
+ - DNANexus
+    - IMPORTANT: this section is in progress
