@@ -9,6 +9,7 @@ Here is a list of execution environments for WDL scripts.
     - jdk
     - docker tools (if using docker container images)
     - `example.wdl` (can use `params.wdl.json`)
+    - cromwell has two modes - 'run' for single workflows --or-- 'server' for scaling multiple workflows
   - miniWDL execution
     - get miniWDL tool
     - IMPORTANT: this section is in progress
