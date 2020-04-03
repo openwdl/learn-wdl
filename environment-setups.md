@@ -5,10 +5,10 @@ Here is a list of execution environments for WDL scripts.
 ### Local
 - **laptop**
   - cromwell execution --or--
-    - cromwell-XY.jar
+    - `cromwell-XY.jar`
     - jdk
     - docker tools (if using docker container images)
-    - example.wdl (can use params.json)
+    - `example.wdl` (can use `params.wdl.json`)
   - miniWDL execution
     - get miniWDL tool
     - IMPORTANT: this section is in progress
