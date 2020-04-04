@@ -1,3 +1,9 @@
+version 1.0
+
+workflow printHelloAndGoodbye {
+    call echoHello
+}
+
 task echoHello{
     command {
         echo "Hello AWS!"
@@ -8,6 +14,4 @@ task echoHello{
 
 }
 
-workflow printHelloAndGoodbye {
-    call echoHello
-}
+
