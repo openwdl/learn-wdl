@@ -1,6 +1,10 @@
 version 1.0
 
-task hello {
+workflow hello {
+  call helloInput
+}
+
+task helloInput {
   input {
     String name
   }
@@ -16,6 +20,4 @@ task hello {
   }
 }
 
-workflow test {
-  call hello
-}
+
