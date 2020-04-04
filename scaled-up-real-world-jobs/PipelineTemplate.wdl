@@ -20,8 +20,8 @@ version 1.0
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-import "library.wdl" as libraryWorkflow
-import "structs.wdl" as structs
+import "Library.wdl" as libraryWorkflow
+import "Structs.wdl" as structs
 
 workflow sample {
     input {
