@@ -1,6 +1,6 @@
 version 1.0
 
-workflow HelloWorld {
+workflow HelloWorldWithDocker {
        call WriteGreeting 
        }  
        
