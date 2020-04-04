@@ -1,10 +1,10 @@
 version 1.0
 
-workflow test {
-  call hello
+workflow helloServer {
+  call WriteGreeting
 }
 
-task hello {
+task WriteGreeting {
   String name
 
   command {
