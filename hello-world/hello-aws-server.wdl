@@ -1,10 +1,10 @@
 version 1.0
 
-workflow printHelloAndGoodbye {
-    call echoHello
+workflow HelloAWS {
+    call WriteGreeting
 }
 
-task echoHello{
+task WriteGreeting {
     command {
         echo "Hello AWS!"
     }
