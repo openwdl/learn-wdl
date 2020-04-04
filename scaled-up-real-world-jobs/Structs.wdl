@@ -1,6 +1,6 @@
 version 1.0
 
-import "tasks/common.wdl" as common
+import "Common.wdl" as common
 
 struct Readgroup {
     String id
