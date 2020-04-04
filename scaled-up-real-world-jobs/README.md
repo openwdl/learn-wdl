@@ -17,8 +17,7 @@ The structure:
    - then starts the scatters per ReadGroup, then 
    - executes jobs per ReadGroup
 
-Then there is `sampleConfig.wdl`. This file determines how samples libraries and readgroups
-are related by a `samples.yml` file.
+The `Samples.wdl` file shows how Samples, Libraries and ReadGroups are related using a `samples.yml` file.
 
 ## Documentation
 
