@@ -1,0 +1,11 @@
+---
+# This file contains the docker images used in the pipeline.
+# The containers used by default are biocontainers uploaded on quay.io.
+# https://quay.io/organization/biocontainers
+
+# The string should be formatted in the same way as utilized in a 'docker pull'
+# command.
+
+# Tools are sorted alphabetically for ease of use.
+
+pyyaml: "biowdl/pyyaml:3.13-py37-slim"
