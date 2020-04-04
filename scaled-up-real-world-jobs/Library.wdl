@@ -20,8 +20,8 @@ version 1.0
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-import "readgroup.wdl" as readgroupWorkflow
-import "structs.wdl" as structs
+import "ReadGroup.wdl" as readgroupWorkflow
+import "Structs.wdl" as structs
 
 workflow library {
     input {
