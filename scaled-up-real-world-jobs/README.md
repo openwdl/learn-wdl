@@ -5,7 +5,7 @@ These samples are from this Repo - https://github.com/biowdl/pipeline-template
 ##  Pipeline-template
 
 This repository contains a copy of the [Biowdl](https://github.com/biowdl) 
-multisample pipeline template data.
+multi-sample pipeline template data.
 
 The structure:
 - A pipeline that 
@@ -16,8 +16,6 @@ The structure:
    - executes jobs per Library, --or--
    - then starts the scatters per ReadGroup, then 
    - executes jobs per ReadGroup
-
-The `Samples.wdl` file shows how Samples, Libraries and ReadGroups are related using a `samples.yml` file.
 
 ## Documentation
 
