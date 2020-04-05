@@ -1,7 +1,6 @@
 version 1.0
 
 workflow HelloWorldWithDocker {
-
        call WriteGreeting 
 }  
        
