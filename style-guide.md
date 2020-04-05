@@ -37,6 +37,14 @@ task TaskTwo {
 }
 ```
 
+Requires an `workflow-input.json` file as shown below:
+
+```
+{
+   "WorkflowOne.TaskOne.StringOne": "my string"
+}
+```
+
 ## Code Formatting
 
 2-spaces, braces on same line, as below  
