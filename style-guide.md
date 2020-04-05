@@ -11,12 +11,12 @@
 ```
 version 1.0
 
-workflow workflowOne {
-  call taskOne
-  call taskTwo
+workflow WorkflowOne {
+  call TaskOne
+  call TaskTwo
 }
 
-task taskOne {
+task TaskOne {
   StringOne in
   command {
     echo '${in}'
@@ -26,7 +26,7 @@ task taskOne {
   }
 }
 
-task taskTwo {
+task TaskTwo {
   StringTwo in
   command {
     echo '${in}'
@@ -42,7 +42,7 @@ task taskTwo {
 2-spaces, braces on same line, as below  
 
 ```
-task test {
+task Test {
   String prefix
   command {
     ./my_script > ${prefix}.first
@@ -60,7 +60,7 @@ task test {
 Cromwell gives you a writeable directory as your `CWD` for every backend
 
 ```
-task test {
+task Test {
   command {
     ./do_work > do_this
     ./do_work2 > subdir/do_this
@@ -72,7 +72,7 @@ task test {
 ## Avoid Referencing Absolute Paths (Except when using Docker)
 
 ```
-task bad {
+task Bad {
   File f
   command {
     java -jar /usr/lib/library.jar -Dinput=${f}
@@ -83,7 +83,7 @@ task bad {
 Instead:
 
 ```
-task good {
+task Good {
   File f
   File jar
   command {
@@ -95,7 +95,7 @@ task good {
 If the task is only ever expected to run in the context of a Docker container, then it is okay to reference absolute paths:
 
 ```
-task okay {
+task Okay {
   File f
   command {
     java -jar /usr/lib/library.jar -Dinput=${f}
@@ -111,7 +111,7 @@ task okay {
 If you find yourself wanting to do a small data transformation on one of the inputs, or wanting an if statement, or random number or any other piece of logic, encapsulate it in the `task`'s command:
 
 ```
-task example {
+task Example {
   String s
   File f
   Boolean b
@@ -136,7 +136,7 @@ task example {
 If you're more familiar with Python:
 
 ```
-task example {
+task Example {
   File f
   String s
 
@@ -164,7 +164,7 @@ I find it easier to debug the inputs/outputs/commands of WDL file if they're not
 Even if that means temporarily using absolute paths
 
 ```
-task example {
+task Example {
   String s
   File f
   Boolean b
@@ -185,8 +185,8 @@ task example {
   }
 }
 
-workflow w {
-  call example
+workflow MyWorkflow {
+  call Example
 }
 ```
 
@@ -227,7 +227,7 @@ WDL allows compound types like `Array[String]` or `Map[String, Int]` or `Array[A
 * Serialization by write-to-file
 
 ```
-task example {
+task Example {
   Array[String] array
   Map[String, File] map
   Array[Array[Int]] matrix
@@ -240,8 +240,8 @@ task example {
   }
 }
 
-workflow test {
-  call example
+workflow MyWorkflow {
+  call Example
 }
 ```
 
@@ -297,7 +297,7 @@ key2  /path/to/file2
 use `read_*` functions go to from files output by your command into WDL values
 
 ```
-task example {
+task Example {
   command {
     echo 'first' > file
     echo 'second' >> file
