@@ -1,3 +1,3 @@
 {
-  "test.hello.name": "Server World"
+  "HelloServer.WriteGreeting.name": "Server World"
 }
