@@ -1,7 +1,8 @@
 # WDL Style Guide
 
-Adopted from this Gist - https://gist.github.com/scottfrazer/aa4ab1945a6a4c331211  
-Orignal written by https://gist.github.com/scottfrazer
+- Adopted from this Gist - https://gist.github.com/scottfrazer/aa4ab1945a6a4c331211  
+- Orignal written by https://gist.github.com/scottfrazer
+- Alternate WDL style guide - https://biowdl.github.io/styleGuidelines.html
 
 ---
 
