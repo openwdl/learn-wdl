@@ -17,9 +17,9 @@ workflow WorkflowOne {
 }
 
 task TaskOne {
-  StringOne in
+  StringOne inOne
   command {
-    echo '${in}'
+    echo '${inOne}'
   }
   output {
     String out = read_string(stdout())
@@ -27,17 +27,18 @@ task TaskOne {
 }
 
 task TaskTwo {
-  StringTwo in
+  StringTwo inTwo
   command {
-    echo '${in}'
+    echo '${inTwo}'
   }
   output {
     String out = read_string(stdout())
   }
+  
 }
 ```
 
-Requires an `workflow-input.json` file as shown below:
+Requires a `workflow-input.json` file as shown below:
 
 ```
 {
