@@ -41,7 +41,8 @@ Requires an `workflow-input.json` file as shown below:
 
 ```
 {
-   "WorkflowOne.TaskOne.StringOne": "my string"
+   "WorkflowOne.TaskOne.StringOne": "my first string",
+   "WorkflowOne.TaskTwo.StringTwo": "my second string"
 }
 ```
 
