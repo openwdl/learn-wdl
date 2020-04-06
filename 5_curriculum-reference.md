@@ -29,3 +29,9 @@ List of online technical learning lessons that have aspects to teach us as we wr
   - written notes + short screencasts
   - domain-specific -> example data from genomics
   - domain-specific -> example computation / tools from genomics
+  
+ * Ballerina.io - https://ballerina.io/v1-2/learn/by-example/
+  - brevity
+  - leveling -> designed for those NEW to the language
+  - clear, clean code blocks w/English examples
+  - explains how to run each example
