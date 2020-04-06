@@ -1,0 +1,4 @@
+{
+  "BamstatsWorkflow.Bamstats.mem_gb": "10",
+  "BamstatsWorkflow.Bamstats.bam_input": "./input.bam"
+}
