@@ -3,42 +3,41 @@ version 1.0
 workflow SayItTwice {
 
   call WriteGreeting
-
   call ReadItBackToMe {
      input:
-        written_greeting = WriteGreeting.output_greeting
+        written_name = WriteGreeting.output_name
   }
 
   output {
-     File outfile = ReadItBackToMe.repeated_greeting
+     File outfile = ReadItBackToMe.repeated_name
   }
 }
 
 task WriteGreeting {
 
   input {
-     String greeting
+     String name
   }
 
   command {
-     echo "${greeting}"
+     echo "${name}"
   }
   output {
-     File output_greeting = stdout()
+     File output_name = stdout()
   }
 }
 
 task ReadItBackToMe {
 
   input {
-     File written_greeting
-     String original_greeting = read_string(written_greeting)
+     File written_name
+     String original_name = read_string(written_name)
   }
 
   command {
-     echo "${original_greeting} to you too"
+     echo "${original_name} to you too"
   }
   output {
-     File repeated_greeting = stdout()
+     File repeated_name = stdout()
   }
 }
