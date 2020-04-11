@@ -6,9 +6,11 @@ This is a list of WDL language concepts (keywords)
 
 - `workflow` - list of variables and called tasks
     - `input` - files and/or env config values
-    - `scatter` - parallelize a task call
-        - `call` - run a task in a workflow
-        - `input` - files and/or env config values
+    - `if` - check condition for task execution
+        - `scatter` - parallelize a task call
+            - `call` - run a task in a workflow
+                - `input` - files and/or env config values for this task execution
+                - `batch_size` - set batch size (for scattered task executions)
     - parameters - in the form of `${param_name}`
     - variables - strongly typed
 - `version` - WDL Version - currently `1.0`
@@ -35,6 +37,7 @@ This is a list of WDL language concepts (keywords)
         - `last_revived_by` - name
     - variables - strongly typed
     - parameters - in the form of `${param_name}`
+        - `param_meta` - at task level
 
   ---  
 
