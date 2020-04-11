@@ -24,6 +24,7 @@ task Bamstats {
     }
 
     runtime {
+        # Pull this docker image from the `quay.io` registry
         docker: "quay.io/collaboratory/dockstore-tool-bamstats:1.25-6_1.0"
         memory: mem_gb + "GB"
     }

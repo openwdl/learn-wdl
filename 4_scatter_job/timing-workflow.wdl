@@ -1,6 +1,7 @@
 version 1.0
 
 workflow TimingWorkflow {
+	# scatter keyword parallelizes this Sleep task execution
 	scatter(i in range(15)) {
 		call Sleep { input: sleep_time = i }
 	}

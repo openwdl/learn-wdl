@@ -46,3 +46,4 @@ This is a list of language features
 - Key-valye input files for params assignments - usually `input.json`
     - `{"WorkflowName.ParamName": "workflowParamValue",`
     - `"WorkflowName.TaskName.ParamName": "taskParamValue",}`
+- Comments - designated with `##` or `#`

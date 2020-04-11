@@ -11,7 +11,8 @@ task WriteGreeting {
        output {      
             File output_greeting = stdout()
        }
-       runtime {       
-            docker: "lynnlangit/blastn:latest"    
+       runtime {    
+            # Use this container, pull from DockerHub   
+            docker: "ubuntu:latest"    
        } 
 }

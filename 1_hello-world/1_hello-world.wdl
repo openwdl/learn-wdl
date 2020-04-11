@@ -9,6 +9,7 @@ task WriteGreeting {
      echo "Hello"
   }
   output {
+     # Write output to standard out
      File output_greeting = stdout()
   }
 }

@@ -1,6 +1,6 @@
 version 1.0
 
-workflow HelloServer {
+workflow HelloServerInput {
   call WriteGreeting
 }
 

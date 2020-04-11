@@ -10,6 +10,7 @@ workflow BlastnWorkflow {
 task Blastn {
    String path
 
+   # Container image includes `blast.sh` shell script
    command {
       bash blast.sh ${path}
    }
@@ -19,6 +20,10 @@ task Blastn {
    }
 
    runtime {
+      # pull container image from DockerHub
       docker: "registry.dockerhub.com/lynnlangit/blastn:latest"
    }
+   meta {
+        author: "Lynn Langit"
+    }
 }

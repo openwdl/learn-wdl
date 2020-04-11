@@ -15,15 +15,16 @@ How to run the examples
 ### hello-input.wdl USES run mode
 - run `java -jar cromwell-XY.jar run 3_hello-input.wdl --inputs 3_hello-input.json`
 
-### hello-server-inputs.wdl USES server mode
+### hello-server-input.wdl USES server mode
 - run `java -jar cromwell-[version].jar server` 
 - go to `localhost:8000`
 - navigate to Workflows section and click "Show/Hide"
 - navigate to `/workflows/{version}` which has a green "POST" on the left.
-- find workflowSource file, "Choose File" and navigate to `4_hello-server-inputs.wdl`.
-- find inputs file and navigate to `4_hello-server_inputs.json`.
+- find workflowSource file, "Choose File" and navigate to `4_hello-server-input.wdl`.
+- find inputs file and navigate to `4_hello-server_input.json`.
 - navigate to the bottom of this section and click "Try it out!"
-- observe output from the server process.
+- observe output from the server process.  
+NOTE: can use `hello-docker.wdl` to test running docker process with cromwell server mode
 
 ### hello-aws-server.wdl USES server mode on AWS
 - set up an AWS EC2 instance will cromwell and configure the cromwell server [link](https://docs.opendata.aws/genomics-workflows/orchestration/cromwell/cromwell-examples/) 
