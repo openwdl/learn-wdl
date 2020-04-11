@@ -7,7 +7,7 @@ How to run the examples
 
 ---
 ### hello-world.wdl USES run mode
-- run `java -jar cromwell-XY.jar run hello-world.wdl`
+- run `java -jar cromwell-XY.jar run hello.wdl`
 
 ### hello-input.wdl USES run mode
 - run `java -jar cromwell-XY.jar run hello-world.wdl --inputs hello-input.json`
