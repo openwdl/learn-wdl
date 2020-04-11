@@ -6,7 +6,7 @@ workflow HelloWorldWithDocker {
        
 task WriteGreeting {
        command {      
-            echo "Hello World"
+            echo "Hello Docker"
        }
        output {      
             File output_greeting = stdout()
