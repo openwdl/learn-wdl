@@ -3,8 +3,6 @@
 
 OpenWDL on GitHub -- https://github.com/openwdl/wdl
 
-Question - is there a WDL document style guide (or a general Broad Institute technical documentation style guide?)
-
 ---
 
 
