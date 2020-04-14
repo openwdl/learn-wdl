@@ -1,0 +1,12 @@
+{
+"CramToBamFlow.validate_sam_file_mem_size":"3500 MB",
+"CramToBamFlow.validate_sam_file_disk_size":"${200}",
+"CramToBamFlow.CramToBamTask.RefDict":"${workspace.ref_dict}",
+"CramToBamFlow.CramToBamTask.SampleName":"${this.sample_id}",
+"CramToBamFlow.CramToBamTask.RefFasta":"${workspace.ref_fasta}",
+"CramToBamFlow.cram_to_bam_disk_size":"${200}",
+"CramToBamFlow.CramToBamTask.InputCram":"${this.cram}",
+"CramToBamFlow.cram_to_bam_mem_size":"15 GB",
+"CramToBamFlow.CramToBamTask.RefIndex":"${workspace.ref_fasta_index}",
+"CramToBamFlow.ValidateSamFile.preemptible_tries":"${3}"
+}
