@@ -17,6 +17,13 @@ This is a list of WDL language concepts (keywords)
                 - `batch_size` - set batch size (for scattered task executions)
     - parameters - in the form of `${param_name}`
     - variables - strongly typed
+    - `meta` - metadata for WDL workflow
+        - `author`- author name
+        - `email` - author email
+        - `description` - description of workflow
+        - `version` - version of workflow
+        - `last_modified` - date
+        - `last_revised_by` - name
 ---
 **Task-level keywords**
 
@@ -34,15 +41,16 @@ This is a list of WDL language concepts (keywords)
         - `disks` - type/size of disks
         - `preemtible` - for GCP - use preemtible VMs
         - `continueOnReturnCode` - ususally [0.1]
-    - `meta` - metadata for WDL file
+    - `meta` - metadata for WDL task
         - `author`- author name
         - `email` - author email
+        - `description` - description of task
         - `version` - version of workflow
         - `last_modified` - date
-        - `last_revived_by` - name
-    - variables - strongly typed
+        - `last_revised_by` - name
+    - variables - strongly typed (c-language features below)
     - parameters - in the form of `${param_name}`
-        - `param_meta` - at task level
+        - `param_meta` - at task level, additional information about task-level parameters
 
   ---  
 
@@ -53,6 +61,10 @@ This is a list of WDL language concepts (keywords)
 - Refactor long WDL files using `imports`, enables references to task(s) described other WDL files 
 - List the Workflow and task calls BEFORE the task descriptions in each WDL file
 - Use strong typing for Variable definitions
+    - scoped to Workflow or Task
+    - supported primitive types include: Boolean, Int, Float, String, File
+    - other supported types include: Array, Map (for key-value pairs), Object
+    - supported type prefix options include: “?” for variable that can be optional, “+” is for Arrays that the array must have at least one entry
 - Assign Parameters at scope (workflow, task, command)
 - Use Key-valye input files for parameter assignments - usually `input.json`
     - `{"WorkflowName.ParamName": "workflowParamValue",`
