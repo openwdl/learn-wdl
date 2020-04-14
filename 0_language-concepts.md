@@ -34,7 +34,6 @@ This is a list of WDL language concepts (keywords)
         - `disks` - type/size of disks
         - `preemtible` - for GCP - use preemtible VMs
         - `continueOnReturnCode` - ususally [0.1]
-
     - `meta` - metadata for WDL file
         - `author`- author name
         - `email` - author email
@@ -49,14 +48,13 @@ This is a list of WDL language concepts (keywords)
 
 
 **WDL language features**
-
+- Use 1 WORKFLOW per WDL file
+- Use 1...n TASKS per workflow are allowed in each WDL file
 - Refactor long WDL files using `imports`, enables references to task(s) described other WDL files 
-- 1 workflow per WDL file
-- It's preferred to list the Workflow and task calls BEFORE the task descriptions in each WDL file
-- Multiple tasks per workflow are allowed in each WDL file
-- Strong typing for variables
-- Parameters assigned at scope (workflow, task, command)
-- Key-valye input files for parameter assignments - usually `input.json`
+- List the Workflow and task calls BEFORE the task descriptions in each WDL file
+- Use strong typing for Variable definitions
+- Assign Parameters at scope (workflow, task, command)
+- Use Key-valye input files for parameter assignments - usually `input.json`
     - `{"WorkflowName.ParamName": "workflowParamValue",`
     - `"WorkflowName.TaskName.ParamName": "taskParamValue",}`
-- Comments - designated with `##` (workflow) or `#` (task)
+- Add Comments - designated with `##` (workflow) or `#` (task)
