@@ -50,7 +50,7 @@ This is a list of WDL language concepts (keywords)
 
 **WDL language features**
 
-- Refactor long WDL files using `imports`, enables references to task described other WDL files 
+- Refactor long WDL files using `imports`, enables references to task(s) described other WDL files 
 - 1 workflow per WDL file
 - It's preferred to list the Workflow and task calls BEFORE the task descriptions in each WDL file
 - Multiple tasks per workflow are allowed in each WDL file
