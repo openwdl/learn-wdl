@@ -3,7 +3,7 @@
 This is a list of WDL language concepts (keywords)  
 
 Top-level keywords
-- `version` - WDL Version - currently `1.0`
+- `version` - WDL Version - currently `version 1.0`
 - `##` - workflow comments
 - `import` - import another WDL file and alias with `as`
 ---
@@ -28,7 +28,7 @@ Task-level keywords
             - `command <<< .... "~{myParam}"... >>>`
     - `output` - produces a result (usually a file)
     - `runtime` - execution environment 
-        - `docker` - path to docker image
+        - `docker` - path to docker image (in public registry or on local disk)
         - `memory` - allocated memory for runtime
         - `cpu` - allocated cpu for runtime
         - `disks` - type/size of disks
