@@ -2,12 +2,12 @@
 
 This is a list of WDL language concepts (keywords)  
 
-Top-level keywords
+**WDL File-level keywords**
 - `version` - WDL Version - currently `version 1.0`
 - `##` - workflow comments
 - `import` - import another WDL file and alias with `as`
 ---
-Workflow-level keywords
+**Workflow-level keywords**
 - `workflow` - list of variables and called tasks
     - `input` - files and/or env config values
     - `if` - check condition for task execution
@@ -18,7 +18,7 @@ Workflow-level keywords
     - parameters - in the form of `${param_name}`
     - variables - strongly typed
 ---
-Task-level keywords
+**Task-level keywords**
 
 - `task` - action, includes...
     - `#` - task or command-level comments
@@ -48,15 +48,15 @@ Task-level keywords
   ---  
 
 
-This is a list of language features
+**WDL language features**
 
-- Refactor via 'imports' - refer to other WDL files
+- Refactor long WDL files using `imports`, enables references to task described other WDL files 
 - 1 workflow per WDL file
-- It's preferred to list the Workflow and task calls BEFORE the task descriptions per WDL file
-- Multiple tasks per workflow per WDL file
+- It's preferred to list the Workflow and task calls BEFORE the task descriptions in each WDL file
+- Multiple tasks per workflow are allowed in each WDL file
 - Strong typing for variables
 - Parameters assigned at scope (workflow, task, command)
-- Key-valye input files for params assignments - usually `input.json`
+- Key-valye input files for parameter assignments - usually `input.json`
     - `{"WorkflowName.ParamName": "workflowParamValue",`
     - `"WorkflowName.TaskName.ParamName": "taskParamValue",}`
 - Comments - designated with `##` (workflow) or `#` (task)
