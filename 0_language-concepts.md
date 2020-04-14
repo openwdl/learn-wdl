@@ -52,6 +52,7 @@ This is a list of language features
 
 - Refactor via 'imports' - refer to other WDL files
 - 1 workflow per WDL file
+- It's preferred to list the Workflow and task calls BEFORE the task descriptions per WDL file
 - Multiple tasks per workflow per WDL file
 - Strong typing for variables
 - Parameters assigned at scope (workflow, task, command)
