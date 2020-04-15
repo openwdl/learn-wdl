@@ -37,10 +37,10 @@ This is a list of WDL language concepts (keywords)
     - `runtime` - execution environment 
         - `docker` - path to docker image (in public registry or on local disk)
         - `memory` - allocated memory for runtime
-        - `cpu` - allocated cpu for runtime
+        - `cpu` - number of cpus allocated for runtime
         - `disks` - type/size of disks
-        - `preemtible` - for GCP - use preemtible VMs
-        - `continueOnReturnCode` - ususally [0.1]
+        - `preemptible` - for GCP - use preemptible VMs
+        - `continueOnReturnCode` - usually [0.1]
     - `meta` - metadata for WDL task
         - `author`- author name
         - `email` - author email
@@ -57,7 +57,7 @@ This is a list of WDL language concepts (keywords)
 
 **WDL language features**
 - Use 1 WORKFLOW per WDL file
-- Use 1...n TASKS per workflow are allowed in each WDL file
+- Use 1...n TASKS per workflow are allowed in each WDL file 
 - Refactor long WDL files using `imports`, enables references to task(s) described other WDL files 
 - List the Workflow and task calls BEFORE the task descriptions in each WDL file
 - Use strong typing for Variable definitions
@@ -66,7 +66,7 @@ This is a list of WDL language concepts (keywords)
     - other supported types include: Array, Map (for key-value pairs), Object
     - supported type prefix options include: “?” for variable that can be optional, “+” is for Arrays that the array must have at least one entry
 - Assign Parameters at scope (workflow, task, command)
-- Use Key-valye input files for parameter assignments - usually `input.json`
+- Use Key-value input files for parameter assignments - usually `input.json`
     - `{"WorkflowName.ParamName": "workflowParamValue",`
     - `"WorkflowName.TaskName.ParamName": "taskParamValue",}`
 - Add Comments - designated with `##` (workflow) or `#` (task)
