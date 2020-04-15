@@ -5,7 +5,7 @@ This is a list of WDL language concepts (keywords)
 **WDL File-level keywords**
 - `version` - WDL Version - currently `version 1.0`
 - `##` - workflow comments
-- `import` - import another WDL file and alias with `as`
+- `import` - import another WDL file & alias with `as`
 ---
 **Workflow-level keywords**
 - `workflow` - list of variables and called tasks
@@ -55,10 +55,10 @@ This is a list of WDL language concepts (keywords)
   ---  
 
 
-**WDL language features**
+**WDL Language Style Information**
 - Use 1 WORKFLOW per WDL file
-- Use 1...n TASKS per workflow are allowed in each WDL file 
-- Refactor long WDL files using `imports`, enables references to task(s) described other WDL files 
+- Use 0...n TASKS per workflow / WDL file 
+- Shorten long WDL files using `imports`, enables references to task(s) descriptions in other WDL files 
 - List the Workflow and task calls BEFORE the task descriptions in each WDL file
 - Use strong typing for Variable definitions
     - scoped to Workflow or Task
