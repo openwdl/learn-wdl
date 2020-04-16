@@ -18,7 +18,7 @@ How to run the examples
 ---
 
 ### hello-server-input.wdl USES server mode 
-- run `java -jar -server cromwell-49.jar run ./1_hello-world/4_hello-server.wdl --inputs ./1_hello-world/4_hello-server_input.json`
+- run `java -jar -server cromwell-49.jar run ./1_hello_world/4_hello-server.wdl --inputs ./1_hello_world/4_hello-server_input.json`
 
 ### hello-server-input.wdl USES server mode & SWAGGER UI tool
 - run `java -jar cromwell-XY.jar server` 
