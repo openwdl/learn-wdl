@@ -9,14 +9,24 @@ Here is a list of execution environments for WDL scripts.
     - jdk
     - docker tools (if using docker container images)
     - `example.wdl` (can use `params.wdl.json`)
-    - cromwell has two modes - 'run' for single workflows --or-- 'server' for scaling multiple workflows
+    - cromwell has two possible execution modes 
+      - 'run' for single workflows --or-- 
+      - 'server' for scaling multiple workflows - for more see this [link](https://cromwell.readthedocs.io/en/stable/Modes/)
   - cromshell execution --or--
-    - designed for local testing - https://github.com/broadinstitute/cromshell
+    - designed for local testing - [link](https://github.com/broadinstitute/cromshell)
+    - a script for submitting workflows to a cromwell server and monitoring / querying their results
   - miniWDL execution --or--
     - get miniWDL tool
     - IMPORTANT: this section is in progress
-  - dockstore execution
-    - you can test locally with Dockstore - https://docs.dockstore.org/en/develop/getting-started/getting-started-with-wdl.html
+  - dockstore execution --or--
+    - you can test locally with Dockstore - [link](https://docs.dockstore.org/en/develop/getting-started/)getting-started-with-wdl.html
+  - oliver execution --or--
+    - "An opinionated Cromwell orchestration manager." - [link](https://stjudecloud.github.io/oliver/)
+    - Workflow Orchestration. Easily submit, inspect, kill, and retry workflows in a Cromwell environment.
+    - Better Job Tracking. Jobs can be associated with names and job groups to enable better status reporting.
+    - Dynamic Argument Parsing. Specify inputs and options on the command line rather than editing JSON files.
+    - Third-party Cloud Integrations. Use the aws and azure subcommands to explore cloud-specific functionality.
+
 - **HPC**
     - Link to using cromwell on SLURM - https://cromwell.readthedocs.io/en/stable/backends/SLURM/
 ---

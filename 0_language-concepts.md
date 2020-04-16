@@ -58,13 +58,17 @@ This is a list of WDL language concepts (keywords)
 **WDL Language Style Information**
 - Use 1 WORKFLOW per WDL file
 - Use 0...n TASKS per workflow / WDL file 
-- Shorten long WDL files using `imports`, enables references to task(s) descriptions in other WDL files 
+- Shorten long WDL files using `imports` statement
+    - enables references to task(s) descriptions in referenced WDL files - examples [link](https://cromwell.readthedocs.io/en/stable/Imports/)
+    - enables references to sub workflows in referenced WDL files - examples [link](https://cromwell.readthedocs.io/en/stable/SubWorkflows/)
 - List the Workflow and task calls BEFORE the task descriptions in each WDL file
-- Use strong typing for Variable definitions
-    - scoped to Workflow or Task
+- Use strong typing when defining Variables
+    - Scope Variable declarations to the Workflow, Task or Command
     - supported primitive types include: Boolean, Int, Float, String, File
     - other supported types include: Array, Map (for key-value pairs), Object
-    - supported type prefix options include: “?” for variable that can be optional, “+” is for Arrays that the array must have at least one entry
+    - supported type prefix options include: 
+        - “?” for a variable that can be optional
+        - “+” for Arrays that the array must have at least one entry
 - Assign Parameters at scope (workflow, task, command)
 - Use Key-value input files for parameter assignments - usually `input.json`
     - `{"WorkflowName.ParamName": "workflowParamValue",`
