@@ -1,4 +1,3 @@
-{
-  "BamstatsWorkflow.Bamstats.mem_gb": "10",
-  "BamstatsWorkflow.Bamstats.bam_input": "./input.bam"
+{   "BamstatsWorkflow.mem_gb": "10",   
+    "BamstatsWorkflow.bam_input": "./3_bamstats/input.bam" 
 }
