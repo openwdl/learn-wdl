@@ -17,7 +17,7 @@ Here is a list of execution environments for WDL scripts.
     - a script for submitting workflows to a cromwell server and monitoring / querying their results
   - miniWDL execution --or--
     - get miniWDL tool
-    - IMPORTANT: this section is in progress
+    - article about miniWDL - [link](https://medium.com/czi-technology/miniwdl-17ecdaf40944)
   - dockstore execution --or--
     - you can test locally with Dockstore - [link](https://docs.dockstore.org/en/develop/getting-started/)getting-started-with-wdl.html
   - oliver execution --or--
