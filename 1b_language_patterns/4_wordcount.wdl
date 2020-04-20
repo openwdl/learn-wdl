@@ -1,8 +1,9 @@
 version 1.0
 
 workflow count_lines4_wf {
-
-  Array[File] files
+  input {
+    Array[File] files
+  }
 
   scatter(f in files) {
     call wc2_tool {
@@ -16,8 +17,9 @@ workflow count_lines4_wf {
 }
 
 task wc2_tool {
-
-  File file1
+  input {
+    File file1
+  }
 
   command {
     wc ${file1}
@@ -27,4 +29,3 @@ task wc2_tool {
     Int count = read_int(stdout())
   }
 }
-
