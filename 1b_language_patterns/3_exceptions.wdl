@@ -7,6 +7,8 @@ workflow show_error {
     }
 }
 
+# This task will always return an error
+# Lines 14-18 run a BASH script, hostname is populated via BASH
 task make_error {
     command <<<
         echo '{
