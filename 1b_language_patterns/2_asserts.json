@@ -1,0 +1,4 @@
+{
+    "foo.CONDITION_TO_CHECK": "true",
+    "foo.ERROR_MESSAGE": "This is false."
+  }
