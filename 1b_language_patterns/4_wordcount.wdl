@@ -1,28 +1,33 @@
 version 1.0
+version 1.0
 
-workflow count_lines4_wf {
+import "wc.wdl" as WC
+
+workflow WordCount {
   input {
     Array[File] files
   }
 
   scatter(f in files) {
-    call wc2_tool {
+    call Mapper {
       input: file1=f
     }
   }
   
+  # TODO: Implement reducer-script
   output {
-    wc2_tool.count
+    Mapper.reduceCount
   }
 }
 
-task wc2_tool {
+task Mapper {
   input {
     File file1
   }
 
+  # TODO: Implement mapper-script
   command {
-    wc ${file1}
+    WC ${mapper-script}
   }
 
   output {
