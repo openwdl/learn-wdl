@@ -1,4 +1,5 @@
 version 1.0
+
 task WC {
     input {
         File file1
@@ -12,7 +13,7 @@ task WC {
     
     # TODO: Implement k-v property bag output
     output {
-        Array[String] outArray = read_lines(stdout())
+        Array[String] outArray = read_words(stdout())
     }
 
     runtime {
