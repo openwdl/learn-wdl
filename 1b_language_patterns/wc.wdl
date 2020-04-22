@@ -7,8 +7,7 @@ task WC {
 
     # TODO: Implement split by word
     command <<<
-        cat ${sep=" " inputFiles} > single_md5_file.txt
-        md5sum single_md5_file.txt | awk '{print $1}' > md5sum.report.txt
+        python mapper.py --file=${file1} 
     >>>
     
     # TODO: Implement k-v property bag output
@@ -20,3 +19,4 @@ task WC {
         memory: 1
     }
 }
+

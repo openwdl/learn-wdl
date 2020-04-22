@@ -33,3 +33,13 @@ task Mapper {
     Int count = read_int(stdout())
   }
 }
+
+task Reducer {
+    Map[Int, String] map
+    scatter(pair in map) {
+        String value = pair.left
+    }
+    output {
+        Map[Int, String] mapping = read_map(stdout())
+    }
+}

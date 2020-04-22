@@ -4,6 +4,13 @@
 
 List of online technical learning lessons that have aspects to teach us as we write the WDL Cookbook
 
+* **Galaxy Project Pipeline Tutorial** - https://training.galaxyproject.org/training-material/topics/assembly/tutorials/assembly-with-preprocessing/tutorial.html
+   - formatting
+   - sections
+   - collapsed areas
+   - domain-specific language
+   - on-line presentation
+
 * **og-aws** - https://github.com/open-guides/og-aws
    - brevity
    - community - # of participants
