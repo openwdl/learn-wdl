@@ -61,7 +61,7 @@ This is a short list of key WDL language concepts (keywords). To review the full
   ---  
 
 
-**WDL Language Style Information**
+**WDL Language Style Tips**
 - Use 1 WORKFLOW per WDL file
 - Use 0...n TASKS per workflow / WDL file 
 - Shorten long WDL files using `imports` statement
@@ -78,7 +78,7 @@ This is a short list of key WDL language concepts (keywords). To review the full
 - Assign Parameters at scope (workflow, task, command)
 - Use Key-value input files for parameter assignments - usually `input.json`, example below:  
     `{`  
-        `"WorkflowName.ParamName": "workflowParamValue",`
+        `"WorkflowName.ParamName": "workflowParamValue",`  
         `"WorkflowName.TaskName.ParamName": "taskParamValue"`  
     `}`
 - Add Comments - designated with `##` (workflow level) or `#` (task level)
