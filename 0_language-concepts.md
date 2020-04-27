@@ -4,7 +4,7 @@
 
 This is a short list of key WDL language concepts and keywords. To review the full WDL language specification see this [link](https://github.com/openwdl/wdl/blob/master/versions/1.0/SPEC.md). This page also includes short code snippets with examples of some of the WDL keyword phrases.
 
-WDL scripts describe workflows which contain tasks.  See the diagram to the left to visualize key concepts.  This page is orangized into 4 sections:
+WDL scripts describe workflows which contain tasks.  See the diagram to the left to visualize key concepts.  This page is arranged into 4 sections:
 - WDL file-level keywords
 - WDL workflow keywords
 - WDL task keywords
