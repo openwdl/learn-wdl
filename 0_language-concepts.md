@@ -15,8 +15,8 @@ This is a short list of key WDL language concepts and keywords. To review the fu
 ----
 
 **WDL File-level keywords**
-- `version` - WDL Version - currently `version 1.0`
 - `##` - workflow comments
+- `version` - WDL Version - currently `version 1.0`
 - `import` - import another WDL file 
     - use external task definitions 
     - configure and call (run) those tasks in this workflow 
