@@ -9,7 +9,13 @@ Educational materials for learning WDL
 # Verification & Visualization
 - use tools to verify WDL syntax, tools include `womtool` and others
 - womtool syntax - `java -jar womtool-XY.jar <action> ./path/file.wdl` 
-    - actions include validate (WDL syntax & semantics), inputs (create JSON input file), highlight (reformat/color WDL), parse (WDL syntax only), graph (outputs a .dot of WDL DAG), womgraph (print a graph)
+    - actions include the following:
+        - `validate` (WDL syntax & semantics)
+        - `inputs` (create JSON input file)
+        - `highlight` (reformat/color WDL)
+        - `parse` (WDL syntax only)
+        - `graph` (outputs a .dot of WDL DAG)
+        - `womgraph` (print a graph)
 
 # Execution
 - setup WDL runtime environment for testing (dev) and production
@@ -22,7 +28,7 @@ Educational materials for learning WDL
     - run mode using specified input file  `java -jar cromwell-XY.jar run ./path/file.wdl --inputs ./path/input.json`
     - server mode  `java -jar -server cromwell-49.jar run ./path/server.wdl`
 
-- if running on public cloud, can use wdl_runner - [link](https://wdl-runner.readthedocs.io/en/latest/GettingStarted/TutorialSteps/)  
+- if running on public cloud, can use `wdl_runner` - [link](https://wdl-runner.readthedocs.io/en/latest/GettingStarted/TutorialSteps/)  
     example: `gcloud alpha genomics pipelines run --pipeline-file wdl_pipeline.yaml `
                 `--regions us-central1 --inputs-from-file WDL=test-wdl/ga4ghMd5.wdl,`
                 `WORKFLOW_INPUTS=test-wdl/ga4ghMd5.inputs.json,`
@@ -37,4 +43,12 @@ Educational materials for learning WDL
     - miniwdl check `miniwdl check --path path/myWdl.wdl` - lints WDL
     - miniwdl input checker `miniwdl run hello.wdl` shows missing inputs
     - miniwdl param test run `miniwdl run hello.wdl who=Lynn "who=SoCalDevGal" x=42` runs with test inputs
+
+- if testing, can use `cromshell` - [link](https://github.com/broadinstitute/cromshell) - requires Docker
+    - `brew install broadinstitute/dsp/cromshell` --or-- `conda install cromshell`
+    - also requires `column`, `curl`, `mail` and `jq`
+    - cromshell run `cromshell submit workflow.wdl inputs.json` - can set timeout values, can start/stop/abort workflows
+        - can get status, metadata, execution-status-count, timing (timing diagram in a browser), logs, fetch-logs...more
+
+
 
