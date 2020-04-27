@@ -1,6 +1,9 @@
 # WDL Language Concepts
 
-<img src="https://github.com/lynnlangit/gcp-for-bioinformatics/raw/master/images/wdl-concepts.png" width="460" align="left">
+<img src="https://github.com/lynnlangit/gcp-for-bioinformatics/raw/master/images/wdl-concepts.png" width="460" align="left">  
+
+---  
+
 
 This is a short list of key WDL language concepts and keywords. To review the full WDL language specification see this [link](https://github.com/openwdl/wdl/blob/master/versions/1.0/SPEC.md). This page also includes short code snippets with examples using some WDL keyword phrases.
 
