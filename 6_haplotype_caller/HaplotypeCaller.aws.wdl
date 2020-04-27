@@ -27,7 +27,8 @@
 ## authorized to run all programs before running this script. Please see the dockers
 ## for detailed licensing information pertaining to the included programs.
 
-# WORKFLOW DEFINITION
+version 1.0
+
 workflow HaplotypeCallerGvcf_GATK4 {
   File input_bam
   File input_bam_index

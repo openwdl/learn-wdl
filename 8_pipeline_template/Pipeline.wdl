@@ -20,6 +20,8 @@ version 1.0
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
+version 1.0
+
 import "Common.wdl" as common
 import "Sample.wdl" as sampleWorkflow
 import "Structs.wdl" as structs

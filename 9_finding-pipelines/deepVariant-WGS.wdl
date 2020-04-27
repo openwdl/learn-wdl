@@ -5,6 +5,8 @@ version 1.0
 # Calling pipeline for Single Samples. It is designed to run in
 # a cost optimized way on GCP
 
+version 1.0
+
 task MakeExamples {
     input {
         File input_bam
