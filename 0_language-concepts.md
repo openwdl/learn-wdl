@@ -1,6 +1,10 @@
 # WDL Language Concepts
 
-This is a short list of key WDL language concepts (keywords). To review the full WDL language specification see this [link](https://github.com/openwdl/wdl/blob/master/versions/1.0/SPEC.md)  
+This is a short list of key WDL language concepts (keywords). To review the full WDL language specification see this [link](https://github.com/openwdl/wdl/blob/master/versions/1.0/SPEC.md). WDL scripts describe workflows which contain tasks.  See the diagram below to visualize key concepts.
+
+![wdl-concepts](https://github.com/lynnlangit/gcp-for-bioinformatics/raw/master/images/wdl-concepts.png)
+
+----
 
 **WDL File-level keywords**
 - `version` - WDL Version - currently `version 1.0`
