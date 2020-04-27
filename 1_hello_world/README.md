@@ -31,9 +31,9 @@ How to run the examples
 - observe output from the server process.  
 NOTE: can use `hello-docker.wdl` to test running docker process with cromwell server mode
 
-### hello-aws-server.wdl USES server mode on AWS
+### hello-world.wdl USES server mode on AWS
 - set up an AWS EC2 instance will cromwell and configure the cromwell server [link](https://docs.opendata.aws/genomics-workflows/orchestration/cromwell/cromwell-examples/) 
 - run this command 
     - `curl -X POST "http://localhost:8000/api/workflows/v1" \`  
     - `-H  "accept: application/json" \`
-    - `-F "workflowSource=@/path/to/5_hello-aws-server.wdl"`
+    - `-F "workflowSource=@/path/to/4_hello-world.wdl"`
