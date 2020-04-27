@@ -31,7 +31,7 @@ Educational materials for learning WDL
                 `OUTPUTS=gs://YOUR-BUCKET/wdl_runner/output `
                 `--logging gs://YOUR-BUCKET/wdl_runner/logging`
 
-if testing, can use `miniwdl` - [link](https://github.com/chanzuckerberg/miniwdl) - requires Docker
+- if testing, can use `miniwdl` - [link](https://github.com/chanzuckerberg/miniwdl) - requires Docker
     - `pip install miniwdl` --or-- `conda install miniwdl`
     - miniwdl check `miniwdl run_self_test` - verifies miniwdl is working
     - miniwdl check `miniwdl check --path path/myWdl.wdl` - lints WDL
