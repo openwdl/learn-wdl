@@ -5,7 +5,11 @@ This is a short list of key WDL language concepts (keywords). To review the full
 **WDL File-level keywords**
 - `version` - WDL Version - currently `version 1.0`
 - `##` - workflow comments
-- `import` - import another WDL file & alias with `as`
+- `import` - import another WDL file 
+    - use external task definitions 
+    - configure and call (run) those tasks in this workflow 
+    - alias external file using `as`
+        - i.e. `import <path\file> as myTask`
 ---
 **Workflow-level keywords**
 - `workflow` - list of variables and called tasks
@@ -14,6 +18,7 @@ This is a short list of key WDL language concepts (keywords). To review the full
         - `scatter` - parallelize a task call
             - `call` - run a task in a workflow
                 - `input` - files and/or env config values for this task execution
+                - example: `call myTask {input: inputFile=inputFile}`
                 - `batch_size` - set batch size (for scattered task executions)
     - parameters - in the form of `${param_name}`
     - variables - strongly typed
@@ -31,8 +36,8 @@ This is a short list of key WDL language concepts (keywords). To review the full
     - `#` - task or command-level comments
     - `input` - files and/or env config values
     - `command` - runs a script
-        - alternate param syntax...
-            - `command <<< .... "~{myParam}"... >>>`
+        - example: `command { /bin/my_taskExec $ {inputFile}}`
+        - alternate param example: `command <<< .... "~{myParam}"... >>>`
     - `output` - produces a result (usually a file)
     - `runtime` - execution environment 
         - `docker` - path to docker image (in public registry or on local disk)
@@ -50,7 +55,8 @@ This is a short list of key WDL language concepts (keywords). To review the full
         - `last_revised_by` - name
     - variables - strongly typed (c-language features below)
     - parameters - in the form of `${param_name}`
-        - `param_meta` - at task level, additional information about task-level parameters
+    - `param_meta` - at task level, additional information about task-level parameters
+        - example: `parameter_meta { inputFile: "the file that myTask will use"}`
 
   ---  
 
@@ -70,7 +76,9 @@ This is a short list of key WDL language concepts (keywords). To review the full
         - “?” for a variable that can be optional
         - “+” for Arrays that the array must have at least one entry
 - Assign Parameters at scope (workflow, task, command)
-- Use Key-value input files for parameter assignments - usually `input.json`
-    - `{"WorkflowName.ParamName": "workflowParamValue",`
-    - `"WorkflowName.TaskName.ParamName": "taskParamValue",}`
-- Add Comments - designated with `##` (workflow) or `#` (task)
+- Use Key-value input files for parameter assignments - usually `input.json`, example below:  
+    `{`  
+        `"WorkflowName.ParamName": "workflowParamValue",`
+        `"WorkflowName.TaskName.ParamName": "taskParamValue"`  
+    `}`
+- Add Comments - designated with `##` (workflow level) or `#` (task level)
