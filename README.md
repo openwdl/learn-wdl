@@ -28,7 +28,7 @@ Educational materials for learning WDL
     - run mode using specified input file  `java -jar cromwell-XY.jar run ./path/file.wdl --inputs ./path/input.json`
     - server mode  `java -jar -server cromwell-49.jar run ./path/server.wdl`
 
-- if running on public cloud, can use `wdl_runner` - [link](https://wdl-runner.readthedocs.io/en/latest/GettingStarted/TutorialSteps/)  
+- if running on public cloud, can use `wdl_runner` - [link](https://wdl-runner.readthedocs.io/en/latest/GettingStarted/TutorialSteps/)  this uses cromwell and also GCP Life Sciences (or Pipelines) API to allocate resources (VMs) on GCP
     example: `gcloud alpha genomics pipelines run --pipeline-file wdl_pipeline.yaml `
                 `--regions us-central1 --inputs-from-file WDL=test-wdl/ga4ghMd5.wdl,`
                 `WORKFLOW_INPUTS=test-wdl/ga4ghMd5.inputs.json,`
