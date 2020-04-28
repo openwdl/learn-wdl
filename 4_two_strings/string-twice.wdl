@@ -1,9 +1,14 @@
 version 1.0
 
 workflow SayItTwice {
-
-  call WriteGreeting
-  call ReadItBackToMe {
+   input {
+     String name
+   }
+   call WriteGreeting {
+      input:
+         name = name
+   }
+   call ReadItBackToMe {
      input:
         written_name = WriteGreeting.output_name
   }
