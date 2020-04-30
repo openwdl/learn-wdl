@@ -1,4 +1,5 @@
 verison 1.0
+
 workflow ga4ghMd5Conditional {
 
  File inputFile

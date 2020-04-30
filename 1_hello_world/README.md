@@ -12,21 +12,21 @@ How to run the examples
 ### hello-world.wdl USES run mode & docker image
 - run `java -jar cromwell-XY.jar run ./1_hello-world/2_hello-docker.wdl`
 
-### hello-input.wdl USES run mode
-- run `java -jar cromwell-XY.jar run ./1_hello-world/3_hello-input.wdl --inputs ./1_hello-world/3_hello-input.json`
+### hello-input.wdl USES run mode & input.json (values for task or workflow)
+- run `java -jar cromwell-XY.jar run ./<path>/<file>.wdl --inputs ./<path>/<file>.json`
 
 ---
 
 ### hello-server-input.wdl USES server mode 
-- run `java -jar -server cromwell-49.jar run ./1_hello_world/4_hello-server.wdl --inputs ./1_hello_world/4_hello-server_input.json`
+- run `java -jar -server cromwell-49.jar run ./<path>/<file>.wdl --inputs ./<path>/<file>.json`
 
 ### hello-server-input.wdl USES server mode & SWAGGER UI tool
 - run `java -jar cromwell-XY.jar server` 
 - go to `localhost:8000`
 - navigate to Workflows section and click "Show/Hide"
 - navigate to `/workflows/{version}` which has a green "POST" on the left.
-- find workflowSource file, "Choose File" and navigate to `4_hello-server_input.wdl`.
-- find inputs file and navigate to `4_hello-server_input.json`.
+- find workflowSource file, "Choose File" and navigate to `3_hello-server_input.wdl`.
+- find inputs file and navigate to `3_hello-server_input.json`.
 - navigate to the bottom of this section and click "Try it out!"
 - observe output from the server process.  
 NOTE: can use `hello-docker.wdl` to test running docker process with cromwell server mode
@@ -36,4 +36,4 @@ NOTE: can use `hello-docker.wdl` to test running docker process with cromwell se
 - run this command 
     - `curl -X POST "http://localhost:8000/api/workflows/v1" \`  
     - `-H  "accept: application/json" \`
-    - `-F "workflowSource=@/path/to/4_hello-world.wdl"`
+    - `-F "workflowSource=@/path/to/1_hello-world.wdl"`
