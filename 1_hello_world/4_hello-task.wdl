@@ -1,12 +1,22 @@
-version 1.0 
+version 1.0
+
+workflow HelloTask {
+   # Lines 5-7 are optional. Added for readability
+   input {
+      String name
+   }
+   call WriteGreeting 
+}
 
 task WriteGreeting {
+   input {
+      String name
+   }
   command {
-     echo "Hello"
+    echo 'hello ${name}!'
   }
   output {
-     # Write output to standard out
-     File output_greeting = stdout()
+    File response = stdout()
   }
 }
 

@@ -1,5 +1,5 @@
 ## requires Docker daemon
-## requires parameter file 'input.json'
+## requires parameter file 'input.json' use womtool-XY.jar to generate
 version 1.0
 
 workflow HelloDocker {
