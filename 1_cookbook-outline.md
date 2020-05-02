@@ -29,8 +29,9 @@ Goal: Leveled-approach to learning WDL script features for scalable genomic pipe
 ## Other important areas
 
 - Understanding cromwell (implementation modes) and WDL
-- Finding and using well-crafted Docker containers with bioninformatics tools in WDL pipelines
-- Creating your own Docker containers for bioinformatics scripts or tools
+- Finding and using well-crafted Docker container mages which include common bioninformatics tools (for use in WDL pipelines)
+- Creating your own Docker containers for bioinformatics scripts or tools - best practices
+  - for example, do NOT include sample data in container definition, refer to a public cloud bucket location or mount an external volume
 - Future of WDL, contributing to OpenWDL
 - Finding and using appropriately-sized sample datasets for learning
 
