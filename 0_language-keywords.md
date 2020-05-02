@@ -94,3 +94,4 @@ This is a short list of key WDL language concepts and keywords. To review the fu
         `"WorkflowName.TaskName.ParamName": "taskParamValue"`  
     `}`
 - Add Comments - designated with `##` (workflow level) or `#` (task level)
+- Include a WDL version number at the top of each WDL file using `version 1.0`
