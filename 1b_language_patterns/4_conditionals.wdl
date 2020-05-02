@@ -1,8 +1,9 @@
-verison 1.0
+version 1.0
 
 workflow ga4ghMd5Conditional {
-
- File inputFile
+ input {
+    File inputFile
+ }
 
  call md5 { input: inputFile=inputFile }
  # conditional
@@ -19,7 +20,9 @@ workflow ga4ghMd5Conditional {
 }
 
 task md5 {
-  File inputFile
+  input {
+    File inputFile
+  }
 
   command {
     /bin/my_md5sum ${inputFile}
@@ -43,7 +46,9 @@ task md5 {
 }
 
 task sha256 {
-  File inputFile
+  input {
+    File inputFile
+  }
 
   command {
     sha256sum ${inputFile} > sha256.txt
@@ -64,5 +69,3 @@ task sha256 {
  }
 
 }
-
-
