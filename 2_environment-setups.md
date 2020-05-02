@@ -5,13 +5,14 @@ Here is a list of execution environments for WDL scripts.
 ### Local
 - **laptop**
   - cromwell execution --or--
-    - `cromwell-XY.jar`
-    - jdk
+    - `cromwell-XY.jar` to run WDL scripts
+    - jdk - Java is required
     - docker tools (if using docker container images)
     - `example.wdl` (can use `params.wdl.json`)
     - cromwell has two possible execution modes 
-      - 'run' for single workflows --or-- 
-      - 'server' for scaling multiple workflows - for more see this [link](https://cromwell.readthedocs.io/en/stable/Modes/)
+      - 'run' for running single WDL workflows --or-- 
+      - 'server' for scaling multiple WDL workflows - for more see this [link](https://cromwell.readthedocs.io/en/stable/Modes/)
+    - `womtool-XY.jar` to validate | (generate) inputs (file)| graph....more for WDL files
   - cromshell execution --or--
     - designed for local testing - [link](https://github.com/broadinstitute/cromshell)
     - a script for submitting workflows to a cromwell server and monitoring / querying their results
