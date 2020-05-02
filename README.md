@@ -1,5 +1,6 @@
 # learn-wdl
-Educational materials for learning WDL
+Educational materials for learning WDL.
+**IMPORTANT** using `cromwell-50.jar` for testing
 
 # Language
 - reuse, reconfigure or write WDL script
