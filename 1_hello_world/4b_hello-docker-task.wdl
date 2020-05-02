@@ -1,5 +1,10 @@
 ## requires Docker daemon
 ## requires parameter file 'input.json'
+version 1.0
+
+workflow HelloDocker {
+  call WriteGreeting
+}
 
 task WriteGreeting {
   input {

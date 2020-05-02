@@ -1,6 +1,4 @@
-## using the 'version 1.0' tag causes a runtime error
-## note: this task description does NOT include a workflow
-## to run this task, reference it (using the 'import' statement and 'call' it)
+version 1.0 
 
 task WriteGreeting {
   command {

@@ -1,4 +1,4 @@
-## using the 'version 1.0' tag causes a runtime error
+version 1.0
 
 import "4_hello-task.wdl" as helloTask
 
