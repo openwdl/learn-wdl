@@ -45,7 +45,7 @@ Educational materials for learning WDL.
     - miniwdl input checker `miniwdl run hello.wdl` shows missing inputs
     - miniwdl param test run `miniwdl run hello.wdl who=Lynn "who=SoCalDevGal" x=42` runs with test inputs
 
-- if testing, can use `cromshell` - [link](https://github.com/broadinstitute/cromshell) - requires Docker
+- if testing submitting one or more workflows to a cromwell server, can use `cromshell` - [link](https://github.com/broadinstitute/cromshell) - requires Docker
     - `brew install broadinstitute/dsp/cromshell` --or-- `conda install cromshell`
     - also requires `column`, `curl`, `mail` and `jq`
     - cromshell run `cromshell submit workflow.wdl inputs.json` - can set timeout values, can start/stop/abort workflows
