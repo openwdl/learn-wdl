@@ -27,7 +27,16 @@ Educational materials for learning WDL.
     - select `run` (single workflow) or `sever` (multiples) mode
     - run mode  `java -jar cromwell-XY.jar run ./path/file.wdl` 
     - run mode using specified input file  `java -jar cromwell-XY.jar run ./path/file.wdl --inputs ./path/input.json`
-    - server mode  `java -jar -server cromwell-49.jar run ./path/server.wdl`
+    - server mode  `java -jar -server cromwell-XY.jar run ./path/server.wdl`
+- if running WDL script with **womtool**
+    - example  `java -jar womtool-XY.jar <action> ./path/file.wdl` 
+    - actions include the following:
+        - `validate` (WDL syntax & semantics)
+        - `inputs` (create JSON input file)
+        - `highlight` (reformat/color WDL)
+        - `parse` (WDL syntax only)
+        - `graph` (outputs a .dot of WDL DAG)
+        - `womgraph` (print a graph <.dot> file)
 
 - if running on public cloud, can use `wdl_runner` - [link](https://wdl-runner.readthedocs.io/en/latest/GettingStarted/TutorialSteps/)  this uses cromwell and also GCP Life Sciences (or Pipelines) API to allocate resources (VMs) on GCP  
     - example: `gcloud alpha genomics pipelines run --pipeline-file wdl_pipeline.yaml `
