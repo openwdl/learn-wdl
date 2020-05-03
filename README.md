@@ -4,7 +4,7 @@ Educational materials for learning WDL.
 
 # Language
 - reuse, reconfigure or write WDL script
-- examples (and sample data) in this Repo
+- examples, lessons (and sample data) in this Repo
 - WDL keyword summary in this Repo
 
 # Verification & Visualization
