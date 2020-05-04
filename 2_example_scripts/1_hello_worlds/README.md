@@ -33,8 +33,8 @@ How to run the examples
 - go to `localhost:8000`
 - navigate to Workflows section and click "Show/Hide"
 - navigate to `/workflows/{version}` which has a green "POST" on the left.
-- find workflowSource file, "Choose File" and navigate to `3_hello-server_input.wdl`.
-- find inputs file and navigate to `3_hello-server_input.json`.
+- find workflowSource file, "Choose File" and navigate to `<file>.wdl`.
+- find inputs file and navigate to `<file>.json`.
 - navigate to the bottom of this section and click "Try it out!"
 - observe output from the server process.  
 NOTE: can use `hello-docker.wdl` to test running docker process with cromwell server mode
@@ -44,4 +44,4 @@ NOTE: can use `hello-docker.wdl` to test running docker process with cromwell se
 - run this command 
     - `curl -X POST "http://localhost:8000/api/workflows/v1" \`  
     - `-H  "accept: application/json" \`
-    - `-F "workflowSource=@/path/to/1_hello-world.wdl"`
+    - `-F "workflowSource=@/<path>/<file>.wdl"`
