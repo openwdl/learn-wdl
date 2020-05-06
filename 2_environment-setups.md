@@ -45,6 +45,7 @@ Here is a list of execution environments for WDL scripts.
       - The workflow runs on multiple Google Compute Engine VMs
       - a master node is created for cromwell
       - cromwell submits each workflow stage as one or more separate pipelines
+  - The `wdl_runner` tool spins up a Cromwell server on a GCP VM & launches a WDL workflow by submitting it to the newly created Cromwell server. - [link](https://github.com/broadinstitute/wdl-runner)
       
 ---      
 
