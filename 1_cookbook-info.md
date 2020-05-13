@@ -3,7 +3,10 @@
 Goal: Leveled-approach to learning WDL script features for scalable genomic pipelines.
 ---
 * Method: Series of one-two feature recipes, using scripts or genomic tools (GATK)
-* Implementation: Local (laptop or HPC) or Cloud (GCP or AWS) or SaaS genomics tool (Terra.bio, DNANexus...)
+* Implementation: 
+  - Local (laptop or HPC) or 
+  - Cloud (GCP or AWS) or 
+  - SaaS genomics tool (Terra.bio, DNANexus...)
 ---
 ## Outline
 
