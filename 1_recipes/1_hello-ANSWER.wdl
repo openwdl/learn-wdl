@@ -17,7 +17,7 @@ task WriteGreeting {
 
   # set the output as a file named 'output_greeting' to standard out -- 6
   output {
-     # Write output to standard out
+     # write output to standard out
      File output_greeting = stdout()
   }
 }
