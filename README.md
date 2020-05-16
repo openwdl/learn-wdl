@@ -1,4 +1,6 @@
 # learn-wdl
+![WDL icon](/images/wdl-icon.png)  
+
 - Educational materials for learning WDL (Workflow Description Language)
 - What is WDL - [link](https://openwdl.org/)
 - **IMPORTANT** using `cromwell-50.jar` for testing
