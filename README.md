@@ -1,6 +1,7 @@
 # learn-wdl
-Educational materials for learning WDL.
-**IMPORTANT** using `cromwell-50.jar` for testing
+- Educational materials for learning WDL (Workflow Description Language)
+- What is WDL - [link](https://openwdl.org/)
+- **IMPORTANT** using `cromwell-50.jar` for testing
 
 # Language
 - reuse, reconfigure or write WDL script
