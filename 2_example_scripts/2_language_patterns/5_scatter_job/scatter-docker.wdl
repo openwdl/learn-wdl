@@ -23,6 +23,7 @@ task Sleep {
 	}
 	runtime {    
             docker: "ubuntu:latest"  
+			# keep going even if Sleep command isn't found in PATH variable
             continueOnReturnCode: 127
     }   
 
