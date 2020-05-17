@@ -1,7 +1,7 @@
 # WDL Style Guide
 
 - Adopted from this Gist - https://gist.github.com/scottfrazer/aa4ab1945a6a4c331211  
-- Orignal written by https://gist.github.com/scottfrazer
+- Original written by https://gist.github.com/scottfrazer
 - Alternate WDL style guide - https://biowdl.github.io/styleGuidelines.html
 
 ---
@@ -9,6 +9,8 @@
 ## WDL Template
 
 ```
+## Workflow-level comments
+
 version 1.0
 
 workflow WorkflowOne {
@@ -16,6 +18,7 @@ workflow WorkflowOne {
   call TaskTwo
 }
 
+# Task-level comments
 task TaskOne {
   StringOne inOne
   command {
@@ -118,7 +121,7 @@ task Okay {
 
 ## Tasks can contain full scripts
 
-If you find yourself wanting to do a small data transformation on one of the inputs, or wanting an if statement, or random number or any other piece of logic, encapsulate it in the `task`'s command:
+If you find yourself wanting to do a small data transformation on one of the inputs, or wanting an if statement, or random number or any other piece of logic, encapsulate it in the `task's` command block:
 
 ```
 task Example {
