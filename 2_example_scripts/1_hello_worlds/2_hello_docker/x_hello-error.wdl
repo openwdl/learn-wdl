@@ -11,7 +11,9 @@ task WriteGreetings {
      echo "Hello World"
   }
   output {
-     # Write output to standard out
      File output_greeting = stdout()
   }
+  runtime {    
+            docker: "ubuntu:latest"    
+       } 
 }
