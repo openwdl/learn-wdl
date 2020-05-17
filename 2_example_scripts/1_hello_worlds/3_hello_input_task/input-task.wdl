@@ -8,8 +8,6 @@ task WriteGreeting {
   input {
     String name
   }
-  
-  # specify parameter value (name) in `input.json` file
   command {
     echo 'hello ${name}!'
   }
