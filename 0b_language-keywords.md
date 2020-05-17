@@ -81,8 +81,8 @@ This is a short list of key WDL language concepts and keywords. To review the fu
     - enables references to sub workflows in referenced WDL files - examples [link](https://cromwell.readthedocs.io/en/stable/SubWorkflows/)
 - List the Workflow and task calls BEFORE the task descriptions in each WDL file
 - Use strong typing when defining Variables
-    - Scope Variable declarations to the Workflow, Task or Command
-    - supported primitive types include: Boolean, Int, Float, String, File
+    - Scope Variable declarations to the Workflow, Task or Command - [link](https://support.terra.bio/hc/en-us/articles/360037485511)
+    - supported primitive types include: Boolean, Int, Float, String, File - [link](https://support.terra.bio/hc/en-us/articles/360037484851)
     - other supported types include: Array, Map (for key-value pairs), Object
     - supported type prefix options include: 
         - “?” for a variable that can be optional
