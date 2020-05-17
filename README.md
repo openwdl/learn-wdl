@@ -27,6 +27,10 @@
         - `graph` (outputs a .dot of WDL DAG)
         - `womgraph` (print a graph)
 
+### 📺Click below to WATCH 'WDL Script Linting' (7 min) on YouTube
+
+[![WDL Script Linting](/images/learn-wdl-lint.png)](https://www.youtube.com/watch?v=FnwfmmJMF3Q "WDL Linting")
+
 # Execution
 - setup WDL runtime environment for testing (dev) and production
 - you can run WDL scripts on your laptop, local HPC cluster or public cloud
