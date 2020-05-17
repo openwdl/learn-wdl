@@ -22,8 +22,9 @@ task Sleep {
 		String out = read_string(stdout())
 	}
 	runtime {    
-            docker: "ubuntu:latest"    
-       } 
+            docker: "ubuntu:latest"  
+            continueOnReturnCode: [0, 1]
+    }   
 
 }
 
