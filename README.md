@@ -4,7 +4,7 @@
 - The Workflow Description Language (WDL) is a scripting language which allows you to specify data processing workflows with a human-readable and -writeable syntax. It was originally developed for genomics, but can be extended to other domains. Learn more at the open WDL language website - [link](https://openwdl.org/)
 - This Repo contains educational materials for learning to write WDL (Workflow Description Language) scripts which can be executed on a variety of computing environments
 
-- 10 minute welcome video - https://youtu.be/JB9J9ukNE9A
+- Watch 10 minute course intro video - ![(/images/learn-wdl-intro.png)](https://youtu.be/JB9J9ukNE9A)
 
 - **IMPORTANT** This Repo uses `cromwell-50.jar` for testing all WDL example scripts
 
