@@ -2,8 +2,8 @@
 ![WDL icon](/images/wdl-icon.png)  
 
 - Educational materials for learning WDL (Workflow Description Language)
-- What is WDL - [link](https://openwdl.org/)
-- **IMPORTANT** using `cromwell-50.jar` for testing
+- About the open WDL language - [link](https://openwdl.org/)
+- **IMPORTANT** This Repo uses `cromwell-50.jar` for testing all WDL example scripts
 
 # Language
 - reuse, reconfigure or write WDL script
