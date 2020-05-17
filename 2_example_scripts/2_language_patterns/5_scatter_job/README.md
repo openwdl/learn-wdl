@@ -17,3 +17,5 @@ You'll need to swap out my workflow ID for the one that you received
  - `http://localhost:8000/api/workflows/v1/8d18b845-7143-4f35-9543-1977383b7d2f/timing`  
 
 After your tasks complete you should see a visual output of the task execution timings for your workflow.
+
+If running on Terra.bio - use `scatter-docker.wdl`, as docker attribute is required for WDL on Terra.
