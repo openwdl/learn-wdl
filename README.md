@@ -29,7 +29,7 @@
 
 ### 📺Click below to WATCH 'WDL Script Linting' (7 min) on YouTube
 
-[![WDL Script Linting](/images/learn-wdl-lint.png)](https://www.youtube.com/watch?v=FnwfmmJMF3Q "WDL Linting")
+[![WDL Script Linting](/images/wdl-lint.png)](https://www.youtube.com/watch?v=FnwfmmJMF3Q "WDL Linting")
 
 # Execution
 - setup WDL runtime environment for testing (dev) and production
