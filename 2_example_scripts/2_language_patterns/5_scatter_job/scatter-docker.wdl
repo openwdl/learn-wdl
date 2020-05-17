@@ -23,7 +23,7 @@ task Sleep {
 	}
 	runtime {    
             docker: "ubuntu:latest"  
-            continueOnReturnCode: [0, 1]
+            continueOnReturnCode: 127
     }   
 
 }
