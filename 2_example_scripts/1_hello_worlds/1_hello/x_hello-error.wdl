@@ -1,10 +1,12 @@
+# This script has a syntax error - it's by design
+
 version 1.0
 
 workflow HelloWorld {
   call WriteGreeting
 }
 
-task WriteGreeting {
+task WriteGreetings {
   command {
      echo "Hello World"
   }
