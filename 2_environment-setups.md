@@ -1,6 +1,6 @@
 # WDL Execution Environment Setups
 
-Here is a list of execution environments for WDL scripts.  
+Here is a list of execution environments for WDL scripts running on cromwell plus some compute environment (i.e. local, cloud, HPC...).  
 
 ### Local
 - **laptop**
@@ -33,10 +33,7 @@ Here is a list of execution environments for WDL scripts.
 ---
 
 ### Public Cloud
-- **AWS** - this [link](https://docs.opendata.aws/genomics-workflows/quick-start/) to AWS Cloud Formation template to set up AWS EC2 cromwell instance
-  - requires AWS EC2 key pair
-  - requires AWS S3 bucket
-  - Alternatively - `miniwdl-cloud` targets FSx Lustre, uses Terraform and is intitally designed to run on AWS - [link](https://github.com/mlin/miniwdl-cloud). See also `miniwdl' at [link](https://github.com/chanzuckerberg/miniwdl)
+
 - **GCP**
   - This [tutorial](https://wdl-runner.readthedocs.io/en/latest/GettingStarted/TutorialOverview/#tutorial-scenario) shows running a multi-stage workflow on GCP
       - The workflow is launched with Google Life Sciences API
@@ -46,6 +43,14 @@ Here is a list of execution environments for WDL scripts.
       - a master node is created for cromwell
       - cromwell submits each workflow stage as one or more separate pipelines
   - The `wdl_runner` tool spins up a Cromwell server on a GCP VM & launches a WDL workflow by submitting it to the newly created Cromwell server. - [link](https://github.com/broadinstitute/wdl-runner)
+- **AWS** - this [link](https://docs.opendata.aws/genomics-workflows/quick-start/) to AWS Cloud Formation template to set up AWS EC2 cromwell instance
+  - requires AWS EC2 key pair
+  - requires AWS S3 bucket
+  - Alternatively - `miniwdl-cloud` targets FSx Lustre, uses Terraform and is intitally designed to run on AWS - [link](https://github.com/mlin/miniwdl-cloud). See also `miniwdl' at [link](https://github.com/chanzuckerberg/miniwdl)
+- **Azure** - this [link](https://github.com/microsoft/CromwellOnAzure) to example code in GitHub
+  - uses cromwell TES backend w/CosmosDB
+  - uses Azure Batch
+  - uses Azure Block Blob Storage
       
 ---      
 
