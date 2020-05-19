@@ -6,7 +6,7 @@
 
 ### 📺Click below to WATCH 'Course Intro Video' (10 min) on YouTube
 
-[![Welcome to Learn WDL](/images/learn-wdl-intro.png)](https://youtu.be/JB9J9ukNE9A "Welcome to Learn WDL")
+[![Welcome to Learn WDL](/images/learn-wdl-intro.png)](https://www.youtube.com/watch?v=RtcW2Zdn_28 "Welcome to Learn WDL")
 
 
 - **IMPORTANT** This Repo uses `cromwell-50.jar` for testing all WDL example scripts
