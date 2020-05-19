@@ -6,7 +6,7 @@ LINEAR - execute tasks one after another -  ![linear](/images/linear.png)
 
 ---
 
-TASK-ALIAS - alias a task definition using the `AS` keyword
+TASK-ALIAS - alias a task definition using the `AS` keyword - ![tasks](/images/task-alias.png)
 
 ---
 
