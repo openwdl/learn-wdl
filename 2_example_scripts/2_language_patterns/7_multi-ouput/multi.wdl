@@ -2,7 +2,7 @@ version 1.0
 
 workflow MultiOutMultiIn {
     input {
-        File firstInput
+        String firstInput
     }
     call StepA { input: in=firstInput }
     call StepB { input: in=StepA.out1 }
@@ -15,52 +15,52 @@ workflow MultiOutMultiIn {
 
 task StepA {
     input {
-            File in
+            String in
     }
     command { 
       # programA I=${in} O=outputA.ext 
-      cat ${in} > outputA.txt
+      echo ${in} > outputA.txt
     }
     output { 
       File out1 = "outputA.ext" 
     }
     runtime {    
-            continueOnReturnCode: 127
+            continueOnReturnCode: [0,1,127]
     }   
 }
 
 task StepB {
     input {
-      File in
+      String in
     }
   command { 
       # programB I=${in} O1=outputB1.ext O2=outputB2.ext 
-       cat ${in} > outputB1.txt
-       cat ${in} > outputB2.txt
+       echo ${in} > outputB1.txt
+       echo ${in} > outputB2.txt
   }
   output {
     File out1 = "outputB1.txt"
     File out2 = "outputB2.txt" 
   }
   runtime {     
-            continueOnReturnCode: 127
+            continueOnReturnCode: [0,1,127]
     }   
 }
 
 task StepC {
     input {
-      File in1
-      File in2
+      String in1
+      String in2
     }
     command { 
       # programB I1=${in1} I2=${in2} O=outputC.ext 
-      cat ${in1} > outputC1.txt
-      cat ${in2} > outputC2.txt
+      echo ${in1} > outputC1.txt
+      echo ${in2} > outputC2.txt
     }
     output { 
       File out1 = "outputC.ext" 
     }
     runtime {    
-            continueOnReturnCode: 127
+            continueOnReturnCode: [0,1,127]
     }   
 }
