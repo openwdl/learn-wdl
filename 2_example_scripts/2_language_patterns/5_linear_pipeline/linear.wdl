@@ -12,14 +12,12 @@ workflow SayItTwice {
      input:
         written_name = WriteGreeting.output_name
   }
-
   output {
      File outfile = ReadItBackToMe.repeated_name
   }
 }
 
 task WriteGreeting {
-
   input {
      String name
   }
@@ -33,7 +31,6 @@ task WriteGreeting {
 }
 
 task ReadItBackToMe {
-
   input {
      File written_name
      String original_name = read_string(written_name)
