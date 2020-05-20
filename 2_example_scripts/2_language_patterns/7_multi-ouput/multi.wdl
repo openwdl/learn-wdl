@@ -20,10 +20,7 @@ task StepA {
     output { 
       # File out1 = "outputA.ext" 
       File out1 = stdout()
-    }
-    runtime {    
-            # continueOnReturnCode: [0,1,127]
-    }   
+    }  
 }
 
 task StepB {
@@ -39,9 +36,6 @@ task StepB {
     File out1 = "outputB1.txt"
     File out2 = "outputB2.txt" 
   }
-  runtime {     
-           # continueOnReturnCode: [0,1,127]
-    }   
 }
 
 task StepC {
@@ -58,7 +52,4 @@ task StepC {
       # File out1 = "outputC.ext" 
       File out1 = "outputC1.txt" 
     }
-    runtime {    
-           # continueOnReturnCode: [0,1,127]
-    }   
 }
