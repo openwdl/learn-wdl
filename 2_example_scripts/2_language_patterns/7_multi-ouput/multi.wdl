@@ -17,8 +17,7 @@ task StepA {
       # programA I=${in} O=outputA.ext 
       echo "${in}" > "outputA.txt"
     }
-    output { 
-      # File out1 = "outputA.ext" 
+    output {  
       File out1 = stdout()
     }  
 }
@@ -44,12 +43,11 @@ task StepC {
       String in2
     }
     command { 
-      # programB I1=${in1} I2=${in2} O=outputC.ext 
+      # programC I1=${in1} I2=${in2} O=outputC.ext 
       echo "${in1}" > "outputC1.txt"
       echo "${in2}" > "outputC2.txt"
     }
     output { 
-      # File out1 = "outputC.ext" 
       File out1 = "outputC1.txt" 
     }
 }
