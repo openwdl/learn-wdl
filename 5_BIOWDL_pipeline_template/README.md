@@ -2,6 +2,8 @@
 
 These samples are from this Repo - https://github.com/biowdl/pipeline-template
 
+See also examples of bioinformatics WDL tasks - https://github.com/biowdl/tasks 
+
 ##  Pipeline-template
 
 This repository contains a copy of the [Biowdl](https://github.com/biowdl) 
