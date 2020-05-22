@@ -1,11 +1,10 @@
 # learn-wdl
 
 ## What is WDL?
-- The Workflow Description Language (WDL or 'widdle') is an open source scripting language which allows you to specify data processing workflows with a human-readable and -writeable syntax. 
 
 <img src="https://github.com/openwdl/learn-wdl/raw/master/images/wdl-icon.png" width="460" align="right">  
 
-
+- The Workflow Description Language (WDL or 'widdle') is an open source scripting language which allows you to specify data processing workflows with a human-readable and -writeable syntax. 
 - WDL was originally developed for genomics, but can be extended to other domains. Learn more at the open WDL language website - [link](https://openwdl.org/)
 - This repository contains educational materials for learning to read and write WDL scripts which can be executed on a variety of computing environments
 
