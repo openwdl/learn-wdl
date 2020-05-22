@@ -1,8 +1,4 @@
 # learn-wdl
-![WDL icon](/images/wdl-icon.png)  
-
----
-
 
 ## What is WDL?
 - The Workflow Description Language (WDL or 'widdle') is an open source scripting language which allows you to specify data processing workflows with a human-readable and -writeable syntax. 
