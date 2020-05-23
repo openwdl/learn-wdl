@@ -1,36 +1,23 @@
 # How to learn WDL
 
-WDL scripts require an execution environment.  You have a number of choices, see graphic below.
+WDL scripts require an execution environment to run. Also you may choose to use other language tools, such as a linter.  You have a number of choices for these tools, see this [link](https://github.com/openwdl/wdl#software-and-tools) for detail.
 
+WDL Lesson examples in this course use...
+- GCP for compute (GCE VM or Cloud Life Sciences API [or Pipeline/PAPI API] for multiple GCE VMs)
+- cromwell for execution
+- womtool for linting and input parameter file generation
+- Terra.bio (which uses cromwell) for alternate execution
 ---
-
-
-
-# Language
-- reuse, reconfigure or write WDL script
-- examples, lessons (and sample data) in this Repo
-- WDL keyword summary in this Repo
-
-# Verification & Visualization
-- use tools to verify WDL syntax, tools include `womtool` and others
-- womtool syntax - `java -jar womtool-XY.jar <action> ./path/file.wdl` 
-    - actions include the following:
-        - `validate` (WDL syntax & semantics)
-        - `inputs` (create JSON input file)
-        - `highlight` (reformat/color WDL)
-        - `parse` (WDL syntax only)
-        - `graph` (outputs a .dot of WDL DAG)
-        - `womgraph` (print a graph)
 
 ### 📺Click below to WATCH 'WDL Script Linting' (7 min) on YouTube
 
 [![WDL Script Linting](/images/wdl-lint.png)](https://www.youtube.com/watch?v=FnwfmmJMF3Q "WDL Linting")
 
-# Execution
-- setup WDL runtime environment for testing (dev) and production
-- you can run WDL scripts on your laptop, local HPC cluster or public cloud
+---
 
-# Execution Syntax Examples
+## Execution Syntax Examples
+
+###  For Cromwell / Womtool
 - if running WDL script with **Cromwell**
     - select `run` (single workflow) or `sever` (multiples) mode
     - run mode  `java -jar cromwell-XY.jar run ./path/file.wdl` 
@@ -46,6 +33,8 @@ WDL scripts require an execution environment.  You have a number of choices, see
         - `graph` (outputs a .dot of WDL DAG)
         - `womgraph` (print a graph <.dot> file)
 
+
+## For WDL_Runner for PAPI
 - if running on public cloud, can use `wdl_runner` - [link](https://wdl-runner.readthedocs.io/en/latest/GettingStarted/TutorialSteps/)  this uses cromwell and also GCP Life Sciences (or Pipelines) API to allocate resources (VMs) on GCP  
     - example: 
         `gcloud alpha genomics pipelines run --pipeline-file wdl_pipeline.yaml `
@@ -75,6 +64,7 @@ WDL scripts require an execution environment.  You have a number of choices, see
         - Copy workflow outputs to output path
         - Destroy Compute Engine Virtual machine
 
+### For Miniwdl
 - if testing, can use `miniwdl` - [link](https://github.com/chanzuckerberg/miniwdl) - requires Docker
     - `pip install miniwdl` --or-- `conda install miniwdl`
     - miniwdl check `miniwdl run_self_test` - verifies miniwdl is working
@@ -82,6 +72,7 @@ WDL scripts require an execution environment.  You have a number of choices, see
     - miniwdl input checker `miniwdl run hello.wdl` shows missing inputs
     - miniwdl param test run `miniwdl run hello.wdl who=Lynn "who=SoCalDevGal" x=42` runs with test inputs
 
+### For Cromshell
 - if testing submitting one or more workflows to a cromwell server, can use `cromshell` - [link](https://github.com/broadinstitute/cromshell) - requires Docker
     - `brew install broadinstitute/dsp/cromshell` --or-- `conda install cromshell`
     - also requires `column`, `curl`, `mail` and `jq`
