@@ -1,8 +1,6 @@
 # How to learn WDL
 
-WDL scripts require an execution environment to run. Also you may choose to use other language tools, such as a linter.  You have a number of choices for these tools, see this [link](https://github.com/openwdl/wdl#software-and-tools) for detail.
-
-WDL Lesson examples in this course use...
+WDL scripts require an execution environment to run. Also you may choose to use other language tools, such as a linter.  You have a number of choices for these tools, see this [link](https://github.com/openwdl/wdl#software-and-tools) for detail. WDL Lesson examples in this course use...
 1. **GCP** services
     - Virtual Machine(s) for compute (GCE) and bucket for storage (GCS) --or-- 
     - Terra.bio workflows (Terra runs on GCP)
