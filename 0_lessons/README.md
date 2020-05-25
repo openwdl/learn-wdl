@@ -2,12 +2,12 @@
 
 WDL scripts require an execution environment to run. Also you may choose to use other language tools, such as a linter.  You have a number of choices for these tools, see this [link](https://github.com/openwdl/wdl#software-and-tools) for detail. WDL Lesson examples in this course use...
 1. **GCP** services
-    - Virtual Machine(s) for compute (GCE) and bucket for storage (GCS) --or-- 
+    - GCE Virtual Machine(s) for compute and GCS bucket(s) for file storage --or-- 
     - Terra.bio workflows (Terra runs on GCP)
 2. **cromwell** for execution
     - cromwell `run` mode via GCE, single VM --or--
     - cromwell `server` mode via Terra.bio, multiple GCE VMs
-        - uses Cloud Life Sciences API [or Pipeline/PAPI API]
+        - uses Google Cloud Life Sciences API [or Pipeline/PAPI API]
 3. **womtool** for linting and input parameter file generation
 4. example **WDL files** from this repository (also includes sample data files)
 ---
