@@ -21,11 +21,12 @@ WDL Lesson examples in this course use...
 ## Execution Syntax Examples
 
 ###  For Cromwell / Womtool
-- if running WDL script with **Cromwell**
+- if running WDL script with **cromwell**
+    - example `java -jar cromwell-XY.jar run ./path/file.wdl` 
     - select `run` (single workflow) or `sever` (multiples) mode
-    - run mode  `java -jar cromwell-XY.jar run ./path/file.wdl` 
-    - run mode using specified input file  `java -jar cromwell-XY.jar run ./path/file.wdl --inputs ./path/input.json`
-    - server mode  `java -jar -server cromwell-XY.jar run ./path/server.wdl`
+        - run mode  `java -jar cromwell-XY.jar run ./path/file.wdl` 
+        - run mode using specified input file  `java -jar cromwell-XY.jar run ./path/file.wdl --inputs ./path/input.json`
+        - server mode  `java -jar -server cromwell-XY.jar run ./path/server.wdl`
 - if running WDL script with **womtool**
     - example  `java -jar womtool-XY.jar <action> ./path/file.wdl` 
     - actions include the following:
