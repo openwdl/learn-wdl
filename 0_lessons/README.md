@@ -21,7 +21,7 @@ WDL Lesson examples in this course use...
 
 ---
 
-## Execution Syntax Examples
+## WDL Script Execution Syntax Examples
 
 ###  Used in this Course
 #### For Cromwell / Womtool
