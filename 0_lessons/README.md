@@ -23,7 +23,8 @@ WDL Lesson examples in this course use...
 
 ## Execution Syntax Examples
 
-###  For Cromwell / Womtool
+###  Used in this Course
+#### For Cromwell / Womtool
 - if running WDL script with **cromwell**
     - example `java -jar cromwell-XY.jar run ./path/file.wdl` 
     - select `run` (single workflow) or `sever` (multiples) mode
@@ -39,9 +40,10 @@ WDL Lesson examples in this course use...
         - `parse` (WDL syntax only)
         - `graph` (outputs a .dot of WDL DAG)
         - `womgraph` (print a graph <.dot> file)
+---
 
-
-## For WDL_Runner for PAPI
+### Other options
+#### For WDL_Runner for PAPI
 - if running on public cloud, can use `wdl_runner` - [link](https://wdl-runner.readthedocs.io/en/latest/GettingStarted/TutorialSteps/)  this uses cromwell and also GCP Life Sciences (or Pipelines) API to allocate resources (VMs) on GCP  
     - example: 
         `gcloud alpha genomics pipelines run --pipeline-file wdl_pipeline.yaml `
@@ -71,7 +73,7 @@ WDL Lesson examples in this course use...
         - Copy workflow outputs to output path
         - Destroy Compute Engine Virtual machine
 
-### For Miniwdl
+#### For Miniwdl
 - if testing, can use `miniwdl` - [link](https://github.com/chanzuckerberg/miniwdl) - requires Docker
     - `pip install miniwdl` --or-- `conda install miniwdl`
     - miniwdl check `miniwdl run_self_test` - verifies miniwdl is working
@@ -79,7 +81,7 @@ WDL Lesson examples in this course use...
     - miniwdl input checker `miniwdl run hello.wdl` shows missing inputs
     - miniwdl param test run `miniwdl run hello.wdl who=Lynn "who=SoCalDevGal" x=42` runs with test inputs
 
-### For Cromshell
+#### For Cromshell
 - if testing submitting one or more workflows to a cromwell server, can use `cromshell` - [link](https://github.com/broadinstitute/cromshell) - requires Docker
     - `brew install broadinstitute/dsp/cromshell` --or-- `conda install cromshell`
     - also requires `column`, `curl`, `mail` and `jq`
