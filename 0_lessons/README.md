@@ -12,13 +12,6 @@ WDL Lesson examples in this course use...
         - uses Cloud Life Sciences API [or Pipeline/PAPI API]
 3. **womtool** for linting and input parameter file generation
 4. example **WDL files** from this repository (also includes sample data files)
-
----
-
-### 📺Click below to WATCH 'WDL Script Linting' (7 min) on YouTube
-
-[![WDL Script Linting](/images/wdl-lint.png)](https://www.youtube.com/watch?v=FnwfmmJMF3Q "WDL Linting")
-
 ---
 
 ## WDL Script Execution Syntax Examples
@@ -42,7 +35,14 @@ WDL Lesson examples in this course use...
         - `womgraph` (print a graph <.dot> file)
 ---
 
-### Other options
+### 📺Click below to WATCH 'WDL Script Execution and Linting' (7 min) on YouTube
+
+[![WDL Script Linting](/images/wdl-lint.png)](https://www.youtube.com/watch?v=FnwfmmJMF3Q "WDL Linting")
+
+---
+
+### Other Options for WDL Script Execution
+
 #### For WDL_Runner for PAPI
 - if running on public cloud, can use `wdl_runner` - [link](https://wdl-runner.readthedocs.io/en/latest/GettingStarted/TutorialSteps/)  this uses cromwell and also GCP Life Sciences (or Pipelines) API to allocate resources (VMs) on GCP  
     - example: 
