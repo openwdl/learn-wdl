@@ -10,6 +10,7 @@ WDL scripts require an execution environment to run. Also you may choose to use 
         - uses Google Cloud Life Sciences API [or Pipeline/PAPI API]
 3. **womtool** for linting and input parameter file generation
 4. example **WDL files** from this repository (also includes sample data files)
+5. **docker** for containers used to run bioinformatics tools (GATK, others...) or scripts
 ---
 
 ## WDL Script Execution Syntax Examples
