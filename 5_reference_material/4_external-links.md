@@ -14,7 +14,7 @@
 
 ---
 
-Supplemental material from Geraldine's Book...
+### Supplemental material from Geraldine's Book...
  
 1. Advanced WDL features:
 https://docs.google.com/document/d/16bFTedhrlMT4kzQzeiY10S4dYGirqbhZ-TuJKljpKtA/edit
@@ -26,6 +26,12 @@ https://docs.google.com/document/d/1Px1JKM4OfvqPZxo_VuuHO4TIbI6EbtPsAVmGuUA7yRc/
 https://docs.google.com/document/d/12sFheJm-tfs9XsmYIOh4g3-mDSn31Ox1rkgwBUrSQG0/edit#heading=h.8kz4fb8ygf43
 
 ---
+
+### Nextflow and WDL Quick Reference
+
+Below is a quick reference, translation guide for Nextflow and WDL
+
+![wdl-to-nf](/images/wdl-nf.png)
 
 
 
