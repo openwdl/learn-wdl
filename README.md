@@ -10,9 +10,6 @@
 ---
 <img src="https://github.com/openwdl/learn-wdl/raw/master/images/3-wdl.png" width="400" align="left">
 ---
-
-![3 Steps to Learn WDL](/images/3-wdl.png)
----
 ## Execution Engines
 WDL is not executable in and of itself, but requires an execution engine to run. Compliant executions engines should support the features of a specific version of the WDL specification. Please see the linked engine documentation for information on available execution options and support.
 
