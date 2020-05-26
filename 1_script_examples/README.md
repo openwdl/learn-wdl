@@ -15,6 +15,13 @@ WDL scripts require an execution environment to run. Also you may choose to use 
 Links to other resources
  - How to set up GCE VM for WDL - [link](https://github.com/openwdl/learn-wdl/blob/master/5_reference_material/2_WDL-dev-env.md#wdl-dev-env)
  - WDL keywords/syntax reference - [link](https://github.com/openwdl/learn-wdl/blob/master/5_reference_material/1_WDL-concepts.md)
+ - Learn WDL screencasts (YouTube playlist) - [link](https://www.youtube.com/playlist?list=PL4Q4HssKcxYv5syJKUKRrD8Fbd-_CnxTM)
+
+### 📺Click below to WATCH 'Learn WDL' series of 10 min screencasts on YouTube
+
+[![Learn WDL Playlist](/images/learn-wdl-screencasts.png)](https://www.youtube.com/playlist?list=PL4Q4HssKcxYv5syJKUKRrD8Fbd-_CnxTM "Welcome to Learn WDL")
+
+
 ---
 
 ## WDL Script Execution Syntax Examples
