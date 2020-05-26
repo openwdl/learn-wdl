@@ -13,8 +13,8 @@ WDL scripts require an execution environment to run. Also you may choose to use 
 5. **docker** for containers used to run bioinformatics tools (GATK, others...) or scripts
 
 Links to other resources
- - How to set up GCE VM for WDL - [link]()
- - WDL keywords/syntax reference - [link]()
+ - How to set up GCE VM for WDL - [link](https://github.com/openwdl/learn-wdl/blob/master/5_reference_material/2_WDL-dev-env.md#wdl-dev-env)
+ - WDL keywords/syntax reference - [link](https://github.com/openwdl/learn-wdl/blob/master/5_reference_material/1_WDL-concepts.md)
 ---
 
 ## WDL Script Execution Syntax Examples

@@ -14,7 +14,7 @@ This is a short list of key WDL language concepts and keywords. To review the fu
 
 ----
 
-**WDL File-level keywords**
+## WDL File-level keywords
 - `##` - workflow comments
 - `version` - WDL Version - currently `version 1.0`
 - `import` - import another WDL file 
@@ -23,7 +23,7 @@ This is a short list of key WDL language concepts and keywords. To review the fu
     - alias external file using `as`
         - i.e. `import <path\file> as myTask`
 ---
-**Workflow-level keywords**
+## WDL Workflow-level keywords
 - `workflow` - list of variables and called tasks
     - `input` - files and/or env config values
     - `if` - check condition for task execution
@@ -42,7 +42,7 @@ This is a short list of key WDL language concepts and keywords. To review the fu
         - `last_modified` - date
         - `last_revised_by` - name
 ---
-**Task-level keywords**
+## WDL Task-level keywords
 
 - `task` - action, includes...
     - `#` - task or command-level comments
@@ -72,8 +72,7 @@ This is a short list of key WDL language concepts and keywords. To review the fu
 
   ---  
 
-
-**WDL Language Style Tips**
+## WDL Language Style Tips
 - Use 1 WORKFLOW per WDL file
 - Use 0...n TASKS per workflow / WDL file 
 - Shorten long WDL files using `imports` statement
