@@ -8,8 +8,9 @@
 - [WDL](https://openwdl.org/) was originally developed for genomics, but can be extended to other domains. 
 - This repository contains educational materials for learning to read and write WDL scripts.
 ---
-<img src="https://github.com/openwdl/learn-wdl/raw/master/images/3-wdl.jpg" width="400" align="left">
+<img src="https://github.com/openwdl/learn-wdl/raw/master/images/3-wdl.png" width="400" align="left">
 ---
+
 ![3 Steps to Learn WDL](/images/3-wdl.png)
 ---
 ## Execution Engines
