@@ -11,6 +11,10 @@ WDL scripts require an execution environment to run. Also you may choose to use 
 3. **womtool** for linting and input parameter file generation
 4. example **WDL files** from this repository (also includes sample data files)
 5. **docker** for containers used to run bioinformatics tools (GATK, others...) or scripts
+
+Links to other resources
+ - How to set up GCE VM for WDL - [link]()
+ - WDL keywords/syntax reference - [link]()
 ---
 
 ## WDL Script Execution Syntax Examples
