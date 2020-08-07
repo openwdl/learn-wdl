@@ -24,7 +24,6 @@ if [ "${NODE_VERSION}" = "none" ]; then
     export NODE_VERSION=
 fi
 
-# Install NVM
 mkdir -p ${NVM_DIR}
 curl -so- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash 2>&1
 if [ "${NODE_VERSION}" != "" ]; then
@@ -43,7 +42,6 @@ fi" | tee -a /root/.bashrc /root/.zshrc /home/${NONROOT_USER}/.bashrc >> /home/$
 chown ${NONROOT_USER}:${NONROOT_USER} /home/${NONROOT_USER}/.bashrc /home/${NONROOT_USER}/.zshrc
 chown -R ${NONROOT_USER}:root ${NVM_DIR}
 
-# Install yarn
 curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add - 2>/dev/null
 echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list
 apt-get update
