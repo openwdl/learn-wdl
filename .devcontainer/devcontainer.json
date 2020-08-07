@@ -1,0 +1,17 @@
+{
+	"name": "WDL Dev & Markdown Editing",
+	"dockerFile": "DOCKERFILE",
+
+	"settings": { 
+		"terminal.integrated.shell.linux": "/bin/bash"
+	},
+
+	"extensions": [
+		"yzhang.markdown-all-in-one",
+		"streetsidesoftware.code-spell-checker",
+		"DavidAnson.vscode-markdownlint",
+		"shd101wyy.markdown-preview-enhanced",
+		"bierner.github-markdown-preview"
+	]
+
+}
