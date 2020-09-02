@@ -1,3 +1,0 @@
-Manifest-version: 1.0
-Created-By: 1.0 (Lynn Langit)
-Main-Class: HelloJava.Main
