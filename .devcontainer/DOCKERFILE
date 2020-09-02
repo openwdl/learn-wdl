@@ -31,20 +31,6 @@ RUN if [ "${INSTALL_MAVEN}" = "true" ]; then \
         && ln -s /usr/share/maven/bin/mvn /usr/bin/mvn; \
     fi
 
-# [Optional] Install Gradle
-ARG INSTALL_GRADLE="false"
-ARG GRADLE_VERSION=5.4.1
-ARG GRADLE_DOWNLOAD_SHA="dev-mode"
-ENV GRADLE_HOME=/opt/gradle
-RUN if [ "${INSTALL_GRADLE}" = "true" ]; then \
-        curl -sSL --output gradle.zip "https://services.gradle.org/distributions/gradle-${GRADLE_VERSION}-bin.zip" \
-        && ([ "${GRADLE_DOWNLOAD_SHA}" = "dev-mode" ] || echo "${GRADLE_DOWNLOAD_SHA} *gradle.zip" | sha256sum --check - ) \
-        && unzip gradle.zip \
-        && rm gradle.zip \
-        && mv "gradle-${GRADLE_VERSION}" "${GRADLE_HOME}/" \
-        && ln -s "${GRADLE_HOME}/bin/gradle" /usr/bin/gradle; \
-    fi
-
 # Allow for a consistant java home location for settings - image is changing over time
 RUN if [ ! -d "/docker-java-home" ]; then ln -s "${JAVA_HOME}" /docker-java-home; fi
 
