@@ -114,6 +114,7 @@ chown $USER_UID:$USER_GID /home/$USERNAME/.bashrc
 if [ "$INSTALL_ZSH" = "true" ] && [ ! -d "/root/.oh-my-zsh" ]; then 
     apt-get install -y zsh
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+    sh -c "$(curl -fsSL https://github.com/broadinstitute/cromwell/releases/download/50/cromwell-50.jar)"
     echo "export PATH=\$PATH:\$HOME/.local/bin" >> /root/.zshrc
     cp -R /root/.oh-my-zsh /home/$USERNAME
     cp /root/.zshrc /home/$USERNAME
