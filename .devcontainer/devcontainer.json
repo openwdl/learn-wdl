@@ -14,7 +14,8 @@
 	},
 	
 	"extensions": [
-		"vscjava.vscode-java-pack"
+		"broadinstitute.wdl-devtools",
+		"broadinstitute.wdl"
 	]
 
 }
