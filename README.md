@@ -22,7 +22,7 @@ WDL is not executable in and of itself, but requires an execution engine to run.
  - [dxWDL](https://github.com/dnanexus/dxWDL)
  ---
 
-### 📺Click below to WATCH 'Course Intro Video' (10 min) on YouTube
+### 📺 Click below to WATCH 'Course Intro Video' (10 min) on YouTube
 
 [![Welcome to Learn WDL](/images/learn-wdl-intro.png)](https://www.youtube.com/watch?v=RtcW2Zdn_28 "Welcome to Learn WDL")
 
