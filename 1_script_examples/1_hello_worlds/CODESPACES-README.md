@@ -1,5 +1,9 @@
 # Testing
 
+## Short instructions 
+
+For testing ```broadinstitute/cromwell``` docker image with Github Codespaces
+
 - start from top, i.e  ```cd /```
 - verify java using ```java --version```
 - verify cromwell using ```java -jar cromwell.jar --version```
