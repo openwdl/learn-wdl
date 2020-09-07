@@ -1,6 +1,9 @@
 # Testing
 
 - start from top, i.e  ```cd /```
+- verify java using ```java --version```
+- verify cromwell using ```java -jar cromwell.jar --version```
+- might have to rum ```chmod +x cromwell.jar```
 - from this location, i.e. ```root@codespaces_a1db49:/#```, run
 - run the following
 ```
