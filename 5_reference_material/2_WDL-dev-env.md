@@ -83,7 +83,9 @@ Here is a list of execution environments for WDL scripts running on cromwell plu
   - uses cromwell TES backend w/CosmosDB
   - uses Azure Batch
   - uses Azure Block Blob Storage
-      
+- **Github Codespaces** - this [link](https://github.com/features/codespaces) to request access to Github Codespaces.
+  - use the repo branch named codespaces
+  - uses broadinstitute/cromwell docker image
 ---      
 
 ### Bioinformatics Platforms 
