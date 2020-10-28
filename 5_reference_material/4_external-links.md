@@ -1,16 +1,15 @@
 # List of WDL Resources - External Links
 
-
-0a. OpenWDL on GitHub -- https://github.com/openwdl/wdl
-0b. on GitHub - WDL spec - https://github.com/openwdl/wdl/blob/develop/SPEC.md
-1. on Terra, WDL docs - https://support.terra.bio/hc/en-us/sections/360007274612-WDL-Documentation
-2. on Terra, WDL step-by-step - https://support.terra.bio/hc/en-us/sections/360007347652-WDL-Tutorials
-3. on GATK, WDL user guide - https://gatkforums.broadinstitute.org/wdl/categories/wdl-documentation
-4. on Dockstore, WDL docs - https://docs.dockstore.org/en/develop/getting-started/getting-started-with-wdl.html
-5. on Dockstore, WDL best practices - https://docs.dockstore.org/en/develop/advanced-topics/best-practices/wdl-best-practices.html
-6. on GATK, getting started with WDL - https://gatk.broadinstitute.org/hc/en-us/articles/360035889771-Pipelining-GATK-with-WDL-and-Cromwell
-7. AWS Open Genomics - included CF template for cromwell and WDL examples - https://docs.opendata.aws/genomics-workflows/quick-start/
-8. Cromwell on Azure - Github Repo with code examples - https://github.com/microsoft/CromwellOnAzure
+1. OpenWDL on GitHub -- https://github.com/openwdl/wdl
+2. on GitHub - WDL spec - https://github.com/openwdl/wdl/blob/develop/SPEC.md
+3. on Terra, WDL docs - https://support.terra.bio/hc/en-us/sections/360007274612-WDL-Documentation
+4. on Terra, WDL step-by-step - https://support.terra.bio/hc/en-us/sections/360007347652-WDL-Tutorials
+5. on GATK, WDL user guide - https://gatkforums.broadinstitute.org/wdl/categories/wdl-documentation
+6. on Dockstore, WDL docs - https://docs.dockstore.org/en/develop/getting-started/getting-started-with-wdl.html
+7. on Dockstore, WDL best practices - https://docs.dockstore.org/en/develop/advanced-topics/best-practices/wdl-best-practices.html
+8. on GATK, getting started with WDL - https://gatk.broadinstitute.org/hc/en-us/articles/360035889771-Pipelining-GATK-with-WDL-and-Cromwell
+9. on AWS, Open Genomics - included CF template for cromwell and WDL examples - https://docs.opendata.aws/genomics-workflows/quick-start/
+10. on Azure - Cromwell on Azure - Github Repo with code examples - https://github.com/microsoft/CromwellOnAzure
 
 ---
 
