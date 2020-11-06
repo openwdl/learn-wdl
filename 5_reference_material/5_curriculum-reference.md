@@ -38,7 +38,7 @@ List of online technical learning lessons that have aspects to teach us as we wr
    - teacher material online in Penflip -> see https://www.teachingkidsprogramming.org
   
  * **Ballerina.io** - https://ballerina.io/v1-2/learn/by-example/
-  - brevity
-  - leveling -> designed for those NEW to the language
-  - clear, clean code blocks w/English explanation of each code example
-  - explains how to run each example
+   - brevity
+   - leveling -> designed for those NEW to the language
+   - clear, clean code blocks w/English explanation of each code example
+   - explains how to run each example
