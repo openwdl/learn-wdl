@@ -5,6 +5,7 @@
 - OpenWDL - https://github.com/openwdl/wdl
 - WDL spec - https://github.com/openwdl/wdl/blob/develop/SPEC.md
 - WDL docs - https://github.com/stjudecloud/wdldoc
+- Preemptible cromwell example WDL - https://github.com/broadinstitute/preemptible_cromwell/blob/master/preemptible_counting.wdl
 
 ### on Terra.bio or GATK
 
