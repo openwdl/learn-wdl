@@ -18,8 +18,9 @@
 WDL is not executable in and of itself, but requires an execution engine to run. Compliant executions engines should support the features of a specific version of the WDL specification. Please see the linked engine documentation for information on available execution options and support.
 
  - [Cromwell](https://github.com/broadinstitute/cromwell) - **IMPORTANT** This Repo uses `cromwell-50.jar` for testing all WDL example scripts
- - [MiniWDL](https://github.com/chanzuckerberg/miniwdl)
- - [dxWDL](https://github.com/dnanexus/dxWDL)
+ - [MiniWDL](https://github.com/chanzuckerberg/miniwdl) - Workflow Description Language local runner & developer toolkit for Python 3.6+
+ - [dxWDL](https://github.com/dnanexus/dxWDL) - takes a pipeline written in WDL and compiles it to an equivalent workflow on the DNAnexus platform. WDL draft-2, version 1.0, and the development version are supported
+ - [wdlTools](https://github.com/dnanexus-rnd/wdlTools) - Scala programming language library for parsing WDL, and command-line tools for type-checking, code formatting, and more.
  ---
 
 ### 📺 Click below to WATCH 'Course Intro Video' (10 min) on YouTube
