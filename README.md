@@ -14,9 +14,13 @@
 
 ---
 
-## Execution Environments
+## About WDL script execution
 
-WDL is not executable in and of itself, but requires an execution engine and environment to be runnable. Compliant executions engines should support the features of a specific version of the WDL specification. Please see the linked engine documentation for information on available execution options and support. Some of the linked environments include WDL linting and parsing tools as well.
+WDL is not executable in and of itself, but requires an execution engine and environment to be runnable. Compliant executions engines should support the features of a specific version of the WDL specification.   
+
+Please see the linked engine documentation for information on available execution options and support. Some of the environments (shown linked below) include WDL parsing, linting and DAG (Directed Acyclic Graph or workflow) visualization tools as well.    
+
+### Environments 
 
  - [Cromwell](https://github.com/broadinstitute/cromwell) - **IMPORTANT** This Repo uses `cromwell-50.jar` for testing all WDL example scripts
  - [MiniWDL](https://github.com/chanzuckerberg/miniwdl) - Workflow Description Language local runner & developer toolkit for Python 3.6+
