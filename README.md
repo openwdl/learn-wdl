@@ -16,9 +16,13 @@
 
 ## About WDL script execution
 
-WDL is not executable in and of itself, but requires an execution engine and environment to be runnable. Compliant executions engines should support the features of a specific version of the WDL specification.   
+WDL scripts are not executable in and of themselves, but they require an execution engine and environment to be runnable. Compliant executions engines should support the features of a specific version of the WDL specification, i.e. WDL 1.0, etc...
 
 Please see the linked engine documentation for information on available execution options and support. Some of the environments (shown linked below) include WDL parsing, linting and DAG (Directed Acyclic Graph or workflow) visualization tools as well.    
+
+Most of these environments request one or more language runtimes (such as Java, Python).  Please read the documentation for the execution environment documentation for the particular environment for details.
+
+---
 
 ### Environments 
 
