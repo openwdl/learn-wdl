@@ -1,6 +1,6 @@
 # WDL Dev Env
 
-Use GCE VM
+### Public Cloud - Using GCP (GCE VM)
 
 To set up the image
 - Create a GCE instance from a base Ubuntu image w/100 GB of storage
@@ -36,7 +36,7 @@ Here is a list of execution environments for WDL scripts running on cromwell plu
 
 ### Local
 - **laptop**
-  - cromwell execution --or--
+  - **cromwell** execution --or--
     - `cromwell-XY.jar` to run WDL scripts
     - jdk - Java is required
     - docker tools (if using docker container images)
@@ -45,15 +45,16 @@ Here is a list of execution environments for WDL scripts running on cromwell plu
       - 'run' for running single WDL workflows --or-- 
       - 'server' for scaling multiple WDL workflows - for more see this [link](https://cromwell.readthedocs.io/en/stable/Modes/)
     - `womtool-XY.jar` to validate | (generate) inputs (file)| graph....more for WDL files
-  - cromshell execution --or--
+  - **cromshell** execution --or--
     - designed for local testing - [link](https://github.com/broadinstitute/cromshell)
     - a script for submitting workflows to a cromwell server and monitoring / querying their results
-  - miniWDL execution --or--
+  - **miniWDL** execution --or--
     - get miniWDL tool
     - article about miniWDL - [link](https://medium.com/czi-technology/miniwdl-17ecdaf40944)
-  - dockstore execution --or--
+    - miniWDL best practices - [link](https://miniwdl.readthedocs.io/en/latest/runner_advanced.html)
+  - **dockstore** execution --or--
     - you can test locally with Dockstore - [link](https://docs.dockstore.org/en/develop/getting-started/)getting-started-with-wdl.html
-  - oliver execution --or--
+  - **oliver** execution --or--
     - "An opinionated Cromwell orchestration manager." - [link](https://stjudecloud.github.io/oliver/)
     - Workflow Orchestration. Easily submit, inspect, kill, and retry workflows in a Cromwell environment.
     - Better Job Tracking. Jobs can be associated with names and job groups to enable better status reporting.
