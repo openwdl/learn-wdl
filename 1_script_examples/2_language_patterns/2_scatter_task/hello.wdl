@@ -12,7 +12,6 @@ task WriteGreeting {
      echo "Hello Scattered World"
   }
   output {
-     # Write output to standard out
      File output_greeting = stdout()
   }
 }
