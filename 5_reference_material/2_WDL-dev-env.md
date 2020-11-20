@@ -49,7 +49,7 @@ Here is a list of execution environments for WDL scripts running on cromwell plu
     - designed for local testing - [link](https://github.com/broadinstitute/cromshell)
     - a script for submitting workflows to a cromwell server and monitoring / querying their results
   - **miniWDL** execution --or--
-    - requres Python 3.6+, pip | conda to install miniwdl, optionaly grahpviz (for DAG visualizations)
+    - requres Python 3.6+, pip | conda to install miniwdl, optionaly graphviz (for DAG visualizations)
     - get miniWDL tool - [link](https://github.com/chanzuckerberg/miniwdl)
     - article about miniWDL - [link](https://medium.com/czi-technology/miniwdl-17ecdaf40944)
     - miniWDL best practices - [link](https://miniwdl.readthedocs.io/en/latest/runner_advanced.html)
