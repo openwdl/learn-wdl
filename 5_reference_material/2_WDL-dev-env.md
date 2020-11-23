@@ -28,6 +28,14 @@ To set up the image
 
 IMPORTANT: `STOP` the instance when you are not using it to save money.
 
+Diagram of cromwell on GCP setup shown below
+
+![Cromwell on GCP](https://github.com/openwdl/learn-wdl/blob/master/images/cromwell-on-gcp.png)
+
+ALTERNATE: You can use miniwdl (see links below). Diagram of miniwdl on GCP setup shown below.
+
+![miniwdl on GCP](https://github.com/openwdl/learn-wdl/blob/master/images/miniwdl-on-gcp.png)
+
 ---
 
 ## WDL Execution Environment Setups
