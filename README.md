@@ -27,7 +27,7 @@ Most of these environments request one or more language runtimes (such as Java, 
 ### Environments 
 
  - [Cromwell](https://github.com/broadinstitute/cromwell) - **IMPORTANT** This Repo uses `cromwell-50.jar` for testing all WDL example scripts
- - [MiniWDL](https://github.com/chanzuckerberg/miniwdl) - Workflow Description Language local runner & developer toolkit for Python 3.6+
+ - [MiniWDL](https://github.com/chanzuckerberg/miniwdl) - WDL script local runner & developer toolkit for Python 3.6+ - [docs here](https://miniwdl.readthedocs.io/en/latest/getting_started.html)
  - [dxWDL](https://github.com/dnanexus/dxWDL) - takes a pipeline written in WDL and compiles it to an equivalent workflow on the DNAnexus platform. WDL draft-2, version 1.0, and the development version are supported
  - [wdlTools](https://github.com/dnanexus-rnd/wdlTools) - Scala programming language library for parsing WDL, and command-line tools for type-checking, code formatting, and more.
  ---
