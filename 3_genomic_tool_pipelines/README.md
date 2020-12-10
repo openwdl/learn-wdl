@@ -1,5 +1,13 @@
 # Production WDL Pipelines
 
+## Viral Pipelines
+
+- WDL Viral pipeline examples from The Broad - [link](https://github.com/broadinstitute/viral-pipelines)  
+- Documenation for WDL Viral pipelines - [link](https://viral-pipelines.readthedocs.io/en/latest/workflows.html)
+- Descriptions of the methods - [link](https://viral-pipelines.readthedocs.io/en/latest/workflows.html) and shown below
+
+---
+
 ## WARP
 
 WARP (WDL Analysis Research Pipelines) repository is a collection of cloud-optimized pipelines for processing biological data from the Broad Institute Data Sciences Platform and collaborators.
@@ -11,6 +19,4 @@ WARP pipelines provide robust, standardized data analysis for the Broad Institut
 
 ![WARP WDL](https://github.com/openwdl/learn-wdl/blob/master/images/WARP-pipelines.png)
 
-## Viral Pipelines
 
-WDL Viral pipeline examples from The Broad - [link](https://github.com/broadinstitute/viral-pipelines)
