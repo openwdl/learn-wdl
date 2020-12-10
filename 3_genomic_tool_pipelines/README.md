@@ -23,8 +23,8 @@ WARP pipelines provide robust, standardized data analysis for the Broad Institut
 
   - WDL Viral pipeline examples from The Broad - [link](https://github.com/broadinstitute/viral-pipelines)  
   - Documenation for WDL Viral pipelines - [link](https://viral-pipelines.readthedocs.io/en/latest/workflows.html)
-  - Descriptions of the methods - [link](https://viral-pipelines.readthedocs.io/en/latest/workflows.html) and shown below
-  - Examples are shown running using the miniwdl tool
+  - Descriptions of the methods - [link](https://viral-pipelines.readthedocs.io/en/latest/workflows.html) and shown to the left in the diagram
+  - Pipeline examples are shown running using the miniwdl tool
 
 
 
