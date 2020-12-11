@@ -1,6 +1,8 @@
 # WDL Dev Env
 
-### Public Cloud - Using GCP (GCE VM)
+There are a number of choices for WDL script execution.  In this course, we used the setup listed immediately below (GCP + cromwell).  Detailed steps to replicate our setup our included.  Below this setup is a list of other possible WDL environment setups.  
+
+### THIS COURSE: Public Cloud - Using GCP (GCE VM) & cromwell
 
 To set up the image
 - Create a GCE instance from a base Ubuntu image w/100 GB of storage
@@ -28,23 +30,23 @@ To set up the image
 
 IMPORTANT: `STOP` the instance when you are not using it to save money.
 
-Diagram of cromwell on GCP setup shown below
+Diagram of cromwell for WDL on GCP setup shown below
 
 ![Cromwell on GCP](https://github.com/openwdl/learn-wdl/blob/master/images/cromwell-on-gcp.png)
 
-ALTERNATE: You can use miniwdl (see links below). Diagram of miniwdl on GCP setup shown below.
+**ALTERNATE:** You can use the miniwdl library to run WDL scripts(see links below). Miniwdl requires Python and Docker Swarm (rather than Java and cromwell).  Diagram of miniwdl for WDL on GCP setup shown below.
 
 ![miniwdl on GCP](https://github.com/openwdl/learn-wdl/blob/master/images/miniwdl-on-gcp.png)
 
 ---
 
-## WDL Execution Environment Setups
+## OTHER CHOICES: WDL Execution Environment Setups
 
-Here is a list of execution environments for WDL scripts running on cromwell plus some compute environment (i.e. local, cloud, HPC...).  
+Here is a list of possible execution environments for WDL scripts.  EACH of the environments listed below can be run on your choice of compute environment (i.e. local, cloud, HPC...).  
 
 ### Local WDL Execution Environment options 
 - **laptop**
-  - **cromwell** execution --or--
+  - **1. cromwell** execution --or--
     - `cromwell-XY.jar` to run WDL scripts
     - jdk - Java is required
     - docker tools (if using docker container images)
@@ -53,17 +55,18 @@ Here is a list of execution environments for WDL scripts running on cromwell plu
       - 'run' for running single WDL workflows --or-- 
       - 'server' for scaling multiple WDL workflows - for more see this [link](https://cromwell.readthedocs.io/en/stable/Modes/)
     - `womtool-XY.jar` to validate | (generate) inputs (file)| graph....more for WDL files
-  - **cromshell** execution --or--
+  - **2. cromshell** execution --or--
     - designed for local testing - [link](https://github.com/broadinstitute/cromshell)
     - a script for submitting workflows to a cromwell server and monitoring / querying their results
-  - **miniWDL** execution --or--
+  - **3. miniWDL** execution --or--
     - requres Python 3.6+, pip | conda to install miniwdl, optionaly graphviz (for DAG visualizations)
     - get miniWDL tool - [link](https://github.com/chanzuckerberg/miniwdl)
     - article about miniWDL - [link](https://medium.com/czi-technology/miniwdl-17ecdaf40944)
     - miniWDL best practices - [link](https://miniwdl.readthedocs.io/en/latest/runner_advanced.html)
-  - **dockstore** execution --or--
-    - you can test locally with Dockstore - [link](https://docs.dockstore.org/en/develop/getting-started/)getting-started-with-wdl.html
-  - **oliver** execution --or--
+    - get miniWDL plug ins - [link](https://github.com/chanzuckerberg/miniwdl-plugins) for AWS Fargate and AWS S3
+  - **4. dockstore** execution --or--
+    - you can test locally with Dockstore - [link](https://docs.dockstore.org/en/develop/getting-started/getting-started-with-wdl.html)
+  - **5. oliver** execution --or--
     - "An opinionated Cromwell orchestration manager." - [link](https://stjudecloud.github.io/oliver/)
     - Workflow Orchestration. Easily submit, inspect, kill, and retry workflows in a Cromwell environment.
     - Better Job Tracking. Jobs can be associated with names and job groups to enable better status reporting.
@@ -95,14 +98,17 @@ Here is a list of execution environments for WDL scripts running on cromwell plu
   - uses Azure Block Blob Storage
 - **Github Codespaces** - this [link](https://github.com/features/codespaces) to request access to Github Codespaces.
   - use the repo branch named codespaces
-  - uses broadinstitute/cromwell docker image
+  - uses `broadinstitute/cromwell` docker image
+  - Codespaces starts an Azure VM when you create/start the custom Codespace
 ---      
 
 ### Bioinformatics Platforms 
 - **Terra.bio** - runs on GCP
   - Here is a [link](https://app.terra.bio/#workspaces/fc-product-demo/Terra-Workflows-Quickstart) to a Terra.bio workspace which includes 3 versions of a WDL workflow
   - Requires an account on Terra.bio (can use free $ 300 in GCP credits to try this out)
- - **DNANexus**
+- **idSeq**
+   - Requires an account on idSeq.com platform (can try for free after approval) - [link](https://www.discoveridseq.com/)
+- **DNANexus**
     - IMPORTANT: this section is in progress
     
 ---
