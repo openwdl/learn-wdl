@@ -105,8 +105,8 @@ Here is a list of possible execution environments for WDL scripts.  EACH of the 
 - **1. Terra.bio** - runs on GCP
   - Here is a [link](https://app.terra.bio/#workspaces/fc-product-demo/Terra-Workflows-Quickstart) to a Terra.bio workspace which includes 3 versions of a WDL workflow
   - Requires an account on Terra.bio (can use free $ 300 in GCP credits to try this out)
-- **2. idSeq**
-   - Requires an account on `idSeq.net` platform (can try for free after approval) - [link](https://www.discoveridseq.com/)
+- **2. IDseq**
+   - Requires an account on `IDseq.net` platform (can try for free after approval) - [link](https://www.discoveridseq.com/)
 - **3. DNANexus**
    - Requires an account on `https://www.dnanexus.com/`
     
