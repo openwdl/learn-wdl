@@ -19,12 +19,27 @@ WARP pipelines provide robust, standardized data analysis for the Broad Institut
 
 ## Viral Pipelines
 
-<img src="https://github.com/openwdl/learn-wdl/blob/master/images/viral-methods.png" width="600" align="left">  
+<img src="https://github.com/openwdl/learn-wdl/blob/master/images/viral-methods.png" width="400" align="left">  
+
+### WDL Viral Pipeline from The Broad 
 
   - WDL Viral pipeline examples from The Broad - [link](https://github.com/broadinstitute/viral-pipelines)  
   - Documenation for WDL Viral pipelines - [link](https://viral-pipelines.readthedocs.io/en/latest/workflows.html)
   - Descriptions of the methods - [link](https://viral-pipelines.readthedocs.io/en/latest/workflows.html) and shown to the left in the diagram
   - Pipeline examples are shown running using the miniwdl tool
+  
+ ---
+ 
+ ###  RNA-seq Pipeline
+  - A [BioWDL pipeline](https://biowdl.github.io/RNA-seq/v4.0.0/index.html) for processing RNA-seq data, starting with FASTQ files to produce expression measures and VCFs.
+  - This pipeline can be used to process RNA-seq data, starting from FastQ files. It will perform the following tasks...
+    - quality control (using FastQC and MultiQC) 
+    - adapter clipping (using cutadapt) 
+    - mapping (using STAR or HISAT2) 
+    - expression quantification and transcript assembly (using HTSeq-Count and Stringtie) 
+    - variant calling (based on the GATK Best Practises) and lncRNA detection (using CPAT) -- optional tasks
+
+
 
 
 
