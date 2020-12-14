@@ -32,11 +32,11 @@ IMPORTANT: `STOP` the instance when you are not using it to save money.
 
 Diagram of cromwell for WDL on GCP setup shown below
 
-![Cromwell on GCP](https://github.com/openwdl/learn-wdl/blob/master/images/cromwell-on-gcp.png)
+<img src="https://github.com/openwdl/learn-wdl/blob/master/images/cromwell-on-gcp.png" width=600>
 
 **ALTERNATE:** You can use the miniwdl library to run WDL scripts(see links below). Miniwdl requires Python and Docker Swarm (rather than Java and cromwell).  Diagram of miniwdl for WDL on GCP setup shown below.
 
-![miniwdl on GCP](https://github.com/openwdl/learn-wdl/blob/master/images/miniwdl-on-gcp.png)
+<img src="https://github.com/openwdl/learn-wdl/blob/master/images/miniwdl-on-gcp.png" width=600>
 
 ---
 
