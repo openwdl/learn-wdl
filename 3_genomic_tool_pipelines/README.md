@@ -19,7 +19,7 @@ WARP pipelines provide robust, standardized data analysis for the Broad Institut
 
 ## Viral Pipelines
 
-<img src="https://github.com/openwdl/learn-wdl/blob/master/images/viral-methods.png" width="400" align="left">  
+<img src="https://github.com/openwdl/learn-wdl/blob/master/images/viral-methods.png" width="380" align="left">  
 
 ### WDL Viral Pipeline from The Broad 
 
