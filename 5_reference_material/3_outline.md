@@ -1,5 +1,7 @@
 # Learn WDL Course Outline
 
+![learn-wdl-tasks](https://github.com/openwdl/learn-wdl/blob/master/images/learn-wdl-tasks.png)
+
 ## Learn Key WDL Concepts
 - Via example WDL scripts
     - Write, test and run
