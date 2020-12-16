@@ -4,6 +4,8 @@ There are a number of choices for WDL script execution.  In this course, we used
 
 ### THIS COURSE: Public Cloud - Using GCP (GCE VM) & cromwell
 
+<img src="https://github.com/openwdl/learn-wdl/blob/master/images/cromwell-wdl-logo.png" width=300>
+
 1. SETUP the VM
     - Create a GCE instance from a base Ubuntu image w/100 GB of storage
     - SSH into your instance
@@ -39,6 +41,8 @@ Diagram of cromwell for WDL on GCP setup shown below
 ---
 
 ### miniwdl for WDL
+
+<img src="https://github.com/openwdl/learn-wdl/blob/master/images/miniwdl-logo.png" width=300>
 
 **ALTERNATE:** You can use the **miniwdl library** to run WDL scripts(see links below). Miniwdl requires Python and Docker Swarm (rather than Java and cromwell).  Diagram of miniwdl for WDL on GCP setup shown below.
 
