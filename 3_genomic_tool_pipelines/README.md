@@ -44,7 +44,7 @@ WARP pipelines provide robust, standardized data analysis for the Broad Institut
 
 ### Use miniwdl
 
-- To use miniwdl, set up miniwdl dev env, see `vcf_chrom_counter.wdl` example  
+- To use miniwdl, set up [miniwdl dev env](https://github.com/openwdl/learn-wdl/blob/master/5_reference_material/2_WDL-dev-env.md#miniwdl-for-wdl), see `vcf_chrom_counter.wdl` example  
 - Use command below (downloads input data on execution)
 
 ```bash
