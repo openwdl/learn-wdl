@@ -1,15 +1,18 @@
-version 1.0 
+version 1.0
 
-workflow HelloWorld {
-  call WriteGreeting
-}
-
+workflow HelloWorldWithDocker {
+       call WriteGreeting 
+}  
+       
 task WriteGreeting {
-  command {
-     echo "Hello World"
-  }
-  output {
-     # Write output to standard out
-     File output_greeting = stdout()
-  }
+       command {      
+            echo "Hello Docker"
+       }
+       output {      
+            File output_greeting = stdout()
+       }
+       runtime {    
+            # Use this container, pull from DockerHub   
+            docker: "ubuntu:latest"    
+       } 
 }
