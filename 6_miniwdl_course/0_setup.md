@@ -16,6 +16,15 @@
 
 ### Setup Verification
 
+#### Verify Prereqs
+
+- verify Python via `python -v`
+- verify pip3 via `pip3 -v` or `which pip`
+- verify conda via `which conda`
+- verify miniwdl via `miniwdl --help`
+
+#### Test miniwdl
+
 - open a command prompt and run...
 - `miniwdl run_self_test`
 - …30 second test of the installation with a built-in workflow
