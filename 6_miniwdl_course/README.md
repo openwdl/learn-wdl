@@ -1,6 +1,6 @@
 # Using miniwdl with WDL scripts
 
-<img src="https://github.com/openwdl/learn-wdl/blob/master/images/miniwdl-logo.png" width=400>
+<img src="https://github.com/openwdl/learn-wdl/blob/master/images/miniwdl-logo.png" width=200>
 
 This folder contain course example script files for the miniwdl course for WDL.
 
