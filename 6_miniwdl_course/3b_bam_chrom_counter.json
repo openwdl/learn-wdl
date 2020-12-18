@@ -1,0 +1,6 @@
+{ 
+    "bam_chrom_counter.num_chrom": 22,
+    "bam_chrom_counter.bam": "exampleBAM.bam",
+    "bam_chrom_counter.bai": "exampleBAM.bam.bai"
+    
+}

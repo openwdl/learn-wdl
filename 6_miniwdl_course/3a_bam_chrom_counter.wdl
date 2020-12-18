@@ -4,7 +4,7 @@ workflow bam_chrom_counter {
   input {
     File bam
     File bai
-    Int num_chrom = 22
+    Int num_chrom
   }
   scatter (i in range(num_chrom)) {
     String chrom = "chr~{i+1}"
