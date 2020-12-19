@@ -1,8 +1,8 @@
 # Using miniwdl with WDL scripts
 
-<img src="https://github.com/openwdl/learn-wdl/blob/master/images/miniwdl-logo.png" width=200>
+This folder contain course example script files for the miniwdl course for WDL.  There are companion screencasts on YouTube (playlist shown below) - [link](https://www.youtube.com/playlist?list=PL4Q4HssKcxYv1FQJUD6D1Cu0Q1O-_S1hM)
 
-This folder contain course example script files for the miniwdl course for WDL.
+<img src="https://github.com/openwdl/learn-wdl/blob/master/images/miniwdl-screencasts.png" width=600>
 
 ## Process 
 
