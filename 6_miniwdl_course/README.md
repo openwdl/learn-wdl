@@ -9,7 +9,7 @@ This folder contains course example script files for the miniwdl course for WDL.
 - One-page FAQ for miniwdl - [link](https://miniwdl.readthedocs.io/en/latest/FAQ.html)
 - Documentation for miniwdl - [link](https://miniwdl.readthedocs.io/en/latest/getting_started.html)
 
-## Running WDL workflow script with miniwdl
+## Running WDL workflow scripts with miniwdl
 
 Using miniwdl to run WDL scripts, you'll run jobs which follow the **pattern** shown below:
 - FILES - input data and configuration files on a file system (local or cloud)
