@@ -4,12 +4,17 @@ This folder contains course example script files for the miniwdl course for WDL.
 
 <img src="https://github.com/openwdl/learn-wdl/blob/master/images/miniwdl-screencasts.png" width=600>
 
-## Process 
+## FAQ snd Docs
 
-Using miniwdl to run WDL scripts, you'll run jobs which follow the pattern shown below:
-- input data and configuration files on a file system (local or cloud)
-- output data and log files are stored on a file system (local or cloud)
-- compute (or job analysis) runs on one or more machines
+- One-page FAQ for miniwdl - [link](https://miniwdl.readthedocs.io/en/latest/FAQ.html)
+- Documentation for miniwdl - [link](https://miniwdl.readthedocs.io/en/latest/getting_started.html)
+
+## Running WDL workflow script with miniwdl
+
+Using miniwdl to run WDL scripts, you'll run jobs which follow the **pattern** shown below:
+- FILES - input data and configuration files on a file system (local or cloud)
+- FILES - output data and log files are stored on a file system (local or cloud)
+- COMPUTE -  (or job analysis) runs on one or more machines
   - compute often runs on VMs (virtual machines - can be cloud-hosted, AWS, Azure, GCP...)
   - workflow tasks run from docker container images
 
