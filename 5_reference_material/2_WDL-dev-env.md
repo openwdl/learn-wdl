@@ -10,7 +10,7 @@ There are a number of choices for WDL script execution.  In this course, we used
     - Create a GCE instance from a base Ubuntu image w/100 GB of storage
     - SSH into your instance
     - Get JDK 
-        - `sudo apt install openjre-8-headless` -or- 'sudo apt update', then 'sudo apt install default-jdk`
+        - `sudo apt install openjre-8-headless` -or- `sudo apt update`, then `sudo apt install default-jdk`
     - Install Docker 
         - using `curl -sS https://get.docker.com/ | sh`
     - Start Docker 
