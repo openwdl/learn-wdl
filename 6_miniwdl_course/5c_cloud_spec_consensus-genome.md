@@ -1,21 +1,16 @@
 # Cloud Specs for Consensus-genome.wdl
 
-## Use Notebook VM Instance Type
-
-- includes Python3
-- includes Pip3
-- includes Docker
-
 ## Tested on GCP or AWS
 
 - GCP Notebook (VM) instance or AWS Sagemaker Notebook (VM) instance
+  - Notebook VMs include Python3, pip3 and Docker
   - GCP GCE Notebook instance type `n1-standard-16` costs ~ $ .50/hr
   - AWS Notebook instance type `ml.m5.4xlarge` costs ~ $ 1.00/hr
   - 16 CPUs, 60 GM RAM, 100 GB boot disk, 250 GB data disk
 - Test run info
   - ~ 4 min to run `update-run.wdl` from consensus-genome director of this Repo - https://github.com/chanzuckerberg/idseq-workflows
   - ~ 1 min to run same file with miniwdl call and download caches enabled
-  - uncached each test ~ 5 GB of storage
+  - uncached each test ~ 5 GB of storage (use `df -h` to check disk space used on running VMs)
   - using sample input files from this Repo - https://github.com/chanzuckerberg/idseq-workflows/tree/main/tests/consensus-genome
     - `sample_sars_cov-2_paired_r1.fasta.qz` (4.8 MB)
     - `sample_sars_cov-2_paired_r2.fasta.qz` (4.8 MB)
