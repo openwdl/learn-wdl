@@ -24,9 +24,7 @@ idseq-consensus-genome - latest - c7b5e4b30e97 - 22 hours ago - 1.8GB
 
 #### Run Example
 
-- Tip: Can use `--input` flag with `inputs.json` file rather than direct variable assignment
-- Tip: remove `--verbose` flag to reduce log output
-- Tip: can use `--debug` flag to increase log output
+- run with sample files
 
 ```
 miniwdl run ./consensus-genome/update-run.wdl \
@@ -36,6 +34,10 @@ miniwdl run ./consensus-genome/update-run.wdl \
     sample=sample_sars-cov-2_paired \
     -i ./consensus-genome/tests/local_test.yml
 ````
+- Tip: Can use `--input` flag with `inputs.json` file rather than direct variable assignment
+- Tip: remove `--verbose` flag to reduce log output
+- Tip: can use `--debug` flag to increase log output
+
 ---
 
 ## Other Things to Try
