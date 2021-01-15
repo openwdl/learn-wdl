@@ -22,3 +22,12 @@ For testing are here in this Repo
 ````
 https://github.com/chanzuckerberg/idseq-workflows/tree/main/tests/consensus-genome
 ````
+
+--- 
+
+## Learn More
+
+About IDSeq: IDseq is a hypothesis-free global software platform that helps scientists identify pathogens in metagenomic sequencing data. Discover. Identify the pathogen landscape. Detect. Monitor and review potential outbreaks.
+
+- What is the IDSeq tool? (uses this WDL pipeline) - https://www.discoveridseq.com/
+- Request access to IDSeq - https://idseq.net/
