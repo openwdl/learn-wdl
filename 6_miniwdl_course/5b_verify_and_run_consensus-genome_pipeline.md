@@ -41,7 +41,7 @@ miniwdl check ./consensus-genome/update-run.wdl
 
 #### Use Caching
 
-- Tip: Try out `call cache` and `download cache`
+- Tip: Try out `call cache` and `download cache`.  Read about caching capabilities - [link](https://miniwdl.readthedocs.io/en/latest/runner_reference.html#call-cache)
 
 ````
 miniwdl configure
