@@ -6,14 +6,6 @@
 miniwdl run ./consensus-genome/update-run.wdl
 ```
 
-#### Lint WDL
-
-- Tip: Fix syntax errors
-
-```
-miniwdl check ./consensus-genome/update-run.wdl
-```
-
 #### Build Docker image
 
 - run from top level path
@@ -34,7 +26,27 @@ miniwdl run ./consensus-genome/update-run.wdl \
     fastqs_1=./consensus-genome/tests/sample_sars-cov-2_paired_r2.fastq.gz \
     sample=sample_sars-cov-2_paired \
     -i ./consensus-genome/tests/local_test.yml
+````
+---
+
+## Other Things to Try
+
+#### Lint WDL
+
+- Tip: Fix syntax errors
+
 ```
+miniwdl check ./consensus-genome/update-run.wdl
+```
+
+#### Use Caching
+
+- Tip: Try out `call cache` and `download cache`
+
+````
+miniwdl configure
+````
+
 
 #### Viz Workflow Graph
 
