@@ -34,9 +34,10 @@ miniwdl run ./consensus-genome/update-run.wdl \
     sample=sample_sars-cov-2_paired \
     -i ./consensus-genome/tests/local_test.yml
 ````
-- Tip: Can use `--input` flag with `inputs.json` file rather than direct variable assignment
-- Tip: remove `--verbose` flag to reduce log output
-- Tip: can use `--debug` flag to increase log output
+- Tips:
+    - can use `--input` flag with `inputs.json` file rather than direct variable assignment
+    - remove `--verbose` flag to reduce log output
+    - can use `--debug` flag to increase log output
 
 ---
 
