@@ -27,9 +27,8 @@
 ## Version Information
 
 - miniwdl v0.11.0
-- GCP OS Linux Debian 10
-- AWS Linux
+- GCP OS Linux Debian 10 --or-- - AWS Linux
 - Python 3.7
 - pip3
 - Docker 19.03.14
-- Docker container image `idseq-consensus-genome:latest` at 1.8 GB
+- Docker container image `idseq-consensus-genome:latest` - built image size is 1.8 GB
