@@ -12,6 +12,15 @@ miniwdl run ./consensus-genome/update-run.wdl
 ````
 docker build -t idseq-consensus-genome consensus-genome
 ````
+- verify image, you should see something like what is below.  Your IMAGE ID and CREATED (time) will vary.
+````
+docker images
+````
+
+REPOSITORY - TAG - IMAGE ID - CREATED - SIZE  
+idseq-consensus-genome - latest - c7b5e4b30e97 - 22 hours ago - 1.8GB  
+
+---
 
 #### Run Example
 
