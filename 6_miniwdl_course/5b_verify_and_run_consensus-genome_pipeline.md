@@ -33,7 +33,7 @@ miniwdl run ./consensus-genome/update-run.wdl \
 
 #### Lint WDL
 
-- Tip: Fix syntax errors
+- Tip: View (& fix!) WDL syntax errors and warnings
 
 ```
 miniwdl check ./consensus-genome/update-run.wdl
