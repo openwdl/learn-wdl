@@ -31,3 +31,4 @@ The IDSeq tool uses a version of the `consensus-genome.wdl` pipeline file in thi
 
 - What is the IDSeq tool? - https://www.discoveridseq.com/
 - Request access to IDSeq - https://idseq.net/
+- Explanation of pipeline parameters - https://github.com/czbiohub/sc2-illumina-pipeline/blob/master/docs/running.md
