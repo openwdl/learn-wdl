@@ -6,6 +6,22 @@ There are a number of choices for WDL script execution.  In this course, we used
 
 <img src="https://github.com/openwdl/learn-wdl/blob/master/images/cromwell-wdl-logo.png" width=300>
 
+#### Quick Verification of Dev Env
+
+To verify prereqs  
+- Java  - `java --version`
+- Docker - `docker --version`
+- cromwell - `sudo sudo java -jar cromwell-54.jar`
+- womtool - `sudo sudo java -jar womtool-54.jar`
+
+test 
+- ` cat hello.wdl`
+- ` cat hello-docker.wdl`
+
+---
+
+#### Detailed Setup Steps
+
 1. SETUP the VM
     - Create a GCE instance from a base Ubuntu image w/100 GB of storage
     - SSH into your instance
