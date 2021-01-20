@@ -18,7 +18,7 @@ task StepA {
       echo "${in}" > "outputA.txt"
     }
     output {  
-      File out1 = stdout()
+      File out1 = "outputA.txt"
     }  
 }
 
