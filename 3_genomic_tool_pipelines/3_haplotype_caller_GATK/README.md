@@ -10,4 +10,4 @@ Requires correct configuration of cromwell server for your AWS EC2 instances.
   
  ## Viz of Workflow
  
- <img src="https://github.com/openwdl/learn-wdl/blob/master/3_genomic_tool_pipelines/3_haplotype_caller_GATK/wdl-haplotype.png" width=800>
+ <img src="https://github.com/openwdl/learn-wdl/blob/master/3_genomic_tool_pipelines/3_haplotype_caller_GATK/wdl-haplotype.png" width=900>
