@@ -35,9 +35,9 @@ test
     - Make a directory for cromwell 
         - using `mkdir cromwell`, cd to that directory
     - Get cromwell 
-        - using `curl -L -o cromwell-50.jar https://github.com/broadinstutite/cromwell/releases/download/50/cromwell-50.jar`
+        - using `curl -L -o cromwell-50.jar https://github.com/broadinstitute/cromwell/releases/download/50/cromwell-50.jar`
     - Get womtool 
-        - using `curl -L -o womtool-50.jar https://github.com/broadinstutite/cromwell/releases/download/50/womtool-50.jar`
+        - using `curl -L -o womtool-50.jar https://github.com/broadinstitute/cromwell/releases/download/50/womtool-50.jar`
     - Verify cromwell 
         - using `sudo java -jar cromwell-50.jar --help`
 3. RUN a test WDL workflow with cromwell on your VM    
