@@ -2,23 +2,27 @@ version 1.0
 
 workflow ga4ghMd5 {
 
+input{
     Array[File] inputFiles
+}
 
-    scatter (oneFile in inputFiles) {
+    scatter(oneFile in inputFiles) {
     call md5 { input: inputFile=oneFile }
     }
     call md5ofmd5s { input: inputFiles=md5.value }
 
-    meta {
+meta {
     author: "Brian O’Connor"
     email: "brian@somewhere.com"
     description: "a simple workflow that scatters to calculate md5 checksums and then calculates and overall checksum on the individual checksums."
-    }
+}
 
 }
 
 task md5 {
+input{
     File inputFile
+}
 
     command {
         /bin/my_md5sum ${inputFile}
@@ -42,7 +46,9 @@ task md5 {
 
 task md5ofmd5s {
 
+input{
     Array[File] inputFiles
+}
 
     command <<<
         cat ${sep=" " inputFiles} > single_md5_file.txt
@@ -64,5 +70,3 @@ task md5ofmd5s {
     }
 
 }
-
-
